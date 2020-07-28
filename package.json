@@ -19,8 +19,10 @@
     "url": "https://github.com/chowdhary-org/chowdhary.org/issues"
   },
   "homepage": "https://github.com/chowdhary-org/chowdhary.org#readme",
+  "assetsPath": "assets",
   "devDependencies": {
     "parcel": "^1.12.4",
+    "parcel-plugin-asset-copier": "^1.1.0",
     "sass": "^1.26.10",
     "typescript": "^3.9.7"
   }
