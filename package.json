@@ -1,0 +1,19 @@
+{
+  "name": "chowdhary.org",
+  "version": "0.0.0",
+  "description": "The official site",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chowdhary-org/chowdhary.org.git"
+  },
+  "keywords": [
+    "static-site"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chowdhary-org/chowdhary.org/issues"
+  },
+  "homepage": "https://github.com/chowdhary-org/chowdhary.org#readme"
+}
