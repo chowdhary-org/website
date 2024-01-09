@@ -13,11 +13,11 @@ const epilogue = Epilogue({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - DeceptiConf',
-    default: 'DeceptiConf - A community-driven design conference',
+    template: '%s - Chowdhary.org',
+    default: 'Chowdhary.org',
   },
   description:
-    'At DeceptiConf you’ll learn about the latest dark patterns being developed to trick even the smartest visitors, and you’ll learn how to deploy them without ever being detected.',
+    'At Chowdhary.org, we are a nonprofit harnessing the power of technology to open doors to a better future.',
 }
 
 export default function RootLayout({
