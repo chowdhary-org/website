@@ -1,7 +1,7 @@
-import { BackgroundImage } from '@/app/(foundation)/components/BackgroundImage'
-import { Button } from '@/app/(foundation)/components/Button'
-import { Container } from '@/app/(foundation)/components/Container'
-import { Layout } from '@/app/(foundation)/components/Layout'
+import { BackgroundImage } from '@/app/foundation/components/BackgroundImage'
+import { Button } from '@/app/foundation/components/Button'
+import { Container } from '@/app/foundation/components/Container'
+import { Layout } from '@/app/foundation/components/Layout'
 
 export default function NotFound() {
   return (

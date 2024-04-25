@@ -1,5 +1,5 @@
-import { Footer } from '@/app/(foundation)/components/Footer'
-import { Header } from '@/app/(foundation)/components/Header'
+import { Footer } from '@/app/foundation/components/Footer'
+import { Header } from '@/app/foundation/components/Header'
 
 export function Layout({
   children,

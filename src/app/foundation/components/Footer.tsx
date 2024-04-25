@@ -1,5 +1,5 @@
-import { Container } from '@/app/(foundation)/components/Container'
-import { Logo } from '@/app/(foundation)/components/Logo'
+import { Container } from '@/app/foundation/components/Container'
+import { Logo } from '@/app/foundation/components/Logo'
 import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react'
 
 export function Footer() {
