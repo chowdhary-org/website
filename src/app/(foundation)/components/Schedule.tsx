@@ -10,7 +10,7 @@ export function Schedule() {
         <Container className="relative z-10">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
             <h2 className="text-primary-600 font-display text-4xl font-bold tracking-tighter sm:text-5xl">
-              Foundation
+              Chowdhary.org
             </h2>
             <p className="text-primary-900 mt-4 font-display text-2xl tracking-tight">
               At the heart of Chowdhary.org&rsquo;s Foundation lies a resolute
@@ -37,25 +37,25 @@ export function Schedule() {
         <Container className="relative z-10 flex justify-end">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
             <h2 className="text-primary-600 font-display text-4xl font-bold tracking-tighter sm:text-5xl">
-              Ventures
+              Chowdhary.co
             </h2>
             <p className="text-primary-900 mt-4 font-display text-2xl tracking-tight">
-              In the Ventures arm of Chowdhary.org, we bring bold ideas to life.
-              This dynamic platform is dedicated to identifying, investing in,
-              and nurturing early-stage startups that are poised to
-              revolutionize the way we address global challenges. We believe in
-              the power of entrepreneurial spirit combined with technological
-              innovation to create impactful solutions.
+              In Chowdhary Holdings B.V., we bring bold ideas to life. This
+              dynamic platform is dedicated to identifying, investing in, and
+              nurturing early-stage startups that are poised to revolutionize
+              the way we address global challenges. We believe in the power of
+              entrepreneurial spirit combined with technological innovation to
+              create impactful solutions.
             </p>
             <p className="text-primary-900 mt-4 font-display text-lg tracking-tight">
-              Ventures at Chowdhary.org isn&rsquo;t just about funding;
-              it&rsquo;s about building partnerships that foster growth, drive
-              change, and set new benchmarks in the tech world. Join us as we
-              embark on this journey to transform visionary ideas into realities
-              that can reshape our world.
+              Chowdhary.co isn&rsquo;t just about funding; it&rsquo;s about
+              building partnerships that foster growth, drive change, and set
+              new benchmarks in the tech world. Join us as we embark on this
+              journey to transform visionary ideas into realities that can
+              reshape our world.
             </p>
             <div className="ml-12 mt-8">
-              <Button href="#apply">Apply for accelerator</Button>
+              <Button href="https://chowdhary.co">Visit Chowdhary.co</Button>
             </div>
           </div>
         </Container>

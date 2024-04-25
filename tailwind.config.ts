@@ -1,6 +1,6 @@
 import headlessuiPlugin from '@headlessui/tailwindcss'
 import { type Config } from 'tailwindcss'
-import { teal } from 'tailwindcss/colors'
+import { sky } from 'tailwindcss/colors'
 
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
@@ -21,7 +21,7 @@ export default {
       '9xl': ['8rem', { lineHeight: '1' }],
     },
     extend: {
-      colors: { primary: teal },
+      colors: { primary: sky },
       borderRadius: {
         '4xl': '2rem',
         '5xl': '2.5rem',

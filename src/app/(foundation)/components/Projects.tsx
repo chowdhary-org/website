@@ -115,6 +115,18 @@ export function Projects() {
             At Chowdhary.org, every innovation is a step towards a future where
             technology serves humanity in its noblest form.
           </p>
+          <div className="text-primary-900 mt-2 font-display text-lg not-italic">
+            &ndash;{' '}
+            <a
+              href="https://anandchowdhary.com"
+              target="_blank"
+              rel="noopener"
+              className="focus-visible:outline-primary-500 text-primary-800 rounded font-bold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2"
+            >
+              Anand Chowdhary
+            </a>
+            , founder of Chowdhary.org and Chowdhary.co
+          </div>
         </div>
       </Container>
       <div className="relative mt-14 sm:mt-24">
