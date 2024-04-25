@@ -10,12 +10,12 @@ jobs:
       - name: Dispatch chowdhary.org build-site workflow
         uses: benc-uk/workflow-dispatch@v1
         with:
-          workflow: build-site.yaml
+          workflow: build-site.yml
           repo: chowdhary-org/chowdhary.org
           token: ${{ secrets.GH_PAT }}
       - name: Dispatch chowdhary.co build-site workflow
         uses: benc-uk/workflow-dispatch@v1
         with:
-          workflow: build-site.yaml
+          workflow: build-site.yml
           repo: chowdhary-org/chowdhary.co
           token: ${{ secrets.GH_PAT }}
