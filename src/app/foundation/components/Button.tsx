@@ -14,17 +14,17 @@ export function Button({ className, children, ...props }: ButtonProps) {
   return typeof props.href === 'undefined' ? (
     <div className="relative">
       <button className={className}>
-        <ButtonLeft className="text-primary-600 group-hover:text-primary-500 absolute left-px top-0 h-full -translate-x-full " />
+        <ButtonLeft className="absolute left-px top-0 h-full -translate-x-full text-primary-600 group-hover:text-primary-500 " />
         {children}
-        <ButtonLeft className="text-primary-600 group-hover:text-primary-500 absolute right-px top-0 h-full translate-x-full rotate-180" />
+        <ButtonLeft className="absolute right-px top-0 h-full translate-x-full rotate-180 text-primary-600 group-hover:text-primary-500" />
       </button>
     </div>
   ) : (
     <div className="relative">
       <Link href={props.href} className={className}>
-        <ButtonLeft className="text-primary-600 group-hover:text-primary-500 absolute left-px top-0 h-full -translate-x-full" />
+        <ButtonLeft className="absolute left-px top-0 h-full -translate-x-full text-primary-600 group-hover:text-primary-500" />
         {children}
-        <ButtonLeft className="text-primary-600 group-hover:text-primary-500 absolute right-px top-0 h-full translate-x-full rotate-180" />
+        <ButtonLeft className="absolute right-px top-0 h-full translate-x-full rotate-180 text-primary-600 group-hover:text-primary-500" />
       </Link>
     </div>
   )

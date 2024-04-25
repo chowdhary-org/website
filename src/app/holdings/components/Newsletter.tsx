@@ -20,13 +20,13 @@ export function Newsletter() {
   return (
     <section id="newsletter" aria-label="Newsletter">
       <Container>
-        <div className="bg-primary-50 relative -mx-4 overflow-hidden px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
+        <div className="relative -mx-4 overflow-hidden bg-primary-50 px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
           <div className="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
             <div>
-              <p className="text-primary-900 font-display text-4xl font-bold tracking-tighter sm:text-5xl">
+              <p className="font-display text-4xl font-bold tracking-tighter text-primary-900 sm:text-5xl">
                 Apply for an investment
               </p>
-              <p className="text-primary-900 mt-4 text-lg tracking-tight">
+              <p className="mt-4 text-lg tracking-tight text-primary-900">
                 We’re looking for projects that are accelerating the progress of
                 humanity through technological change. If that sounds like you,
                 please apply and we’ll be in touch if it’s a good fit.
@@ -38,27 +38,27 @@ export function Newsletter() {
               className="space-y-5"
             >
               <label className="block space-y-2">
-                <div className="text-primary-700 font-bold">Name</div>
+                <div className="font-bold text-primary-700">Name</div>
                 <input
                   name="name"
                   autoComplete="name"
                   type="text"
-                  className="focus:ring-primary-500 w-full rounded-lg border px-5 py-4 shadow focus:outline-none focus:ring-2"
+                  className="w-full rounded-lg border px-5 py-4 shadow focus:outline-none focus:ring-2 focus:ring-primary-500"
                   placeholder="What's your full name?"
                 />
               </label>
               <label className="block space-y-2">
-                <div className="text-primary-700 font-bold">Email</div>
+                <div className="font-bold text-primary-700">Email</div>
                 <input
                   name="email"
                   autoComplete="email"
                   type="email"
-                  className="focus:ring-primary-500 w-full rounded-lg border px-5 py-4 shadow focus:outline-none focus:ring-2"
+                  className="w-full rounded-lg border px-5 py-4 shadow focus:outline-none focus:ring-2 focus:ring-primary-500"
                   placeholder="What's your work or school email?"
                 />
               </label>
               <fieldset className="space-y-2">
-                <legend className="text-primary-700 font-bold">Topic</legend>
+                <legend className="font-bold text-primary-700">Topic</legend>
                 <label className="flex items-center space-x-2">
                   <input
                     name="topic"
@@ -82,11 +82,11 @@ export function Newsletter() {
                 </label>
               </fieldset>
               <label className="block space-y-2">
-                <div className="text-primary-700 font-bold">Message</div>
+                <div className="font-bold text-primary-700">Message</div>
                 <textarea
                   name="message"
                   rows={5}
-                  className="focus:ring-primary-500 w-full resize-y rounded-lg border px-5 py-4 shadow focus:outline-none focus:ring-2"
+                  className="w-full resize-y rounded-lg border px-5 py-4 shadow focus:outline-none focus:ring-2 focus:ring-primary-500"
                   placeholder="What are you working on?"
                 />
               </label>

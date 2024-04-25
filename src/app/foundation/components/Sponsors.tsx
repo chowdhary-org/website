@@ -73,14 +73,14 @@ export function Sponsors() {
   return (
     <section id="sponsors" aria-label="Sponsors" className="py-20 sm:py-32">
       <Container>
-        <h2 className="text-primary-900 mx-auto max-w-2xl text-center font-display text-4xl font-bold tracking-tighter sm:text-5xl">
+        <h2 className="mx-auto max-w-2xl text-center font-display text-4xl font-bold tracking-tighter text-primary-900 sm:text-5xl">
           Collaborating for impact.
         </h2>
-        <p className="text-primary-700 mx-auto mt-4 max-w-2xl text-center text-lg tracking-tighter">
+        <p className="mx-auto mt-4 max-w-2xl text-center text-lg tracking-tighter text-primary-700">
           Our partners in previous events, investments, and open source
           projects.
         </p>
-        <div className="text-primary-700 mx-auto mt-20 flex max-w-5xl flex-wrap items-center justify-center gap-8 text-center font-bold">
+        <div className="mx-auto mt-20 flex max-w-5xl flex-wrap items-center justify-center gap-8 text-center font-bold text-primary-700">
           {sponsors.map((sponsor) => (
             <div key={sponsor.name} className="space-y-4 text-sm">
               <Image

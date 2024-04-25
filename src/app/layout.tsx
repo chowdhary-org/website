@@ -1,5 +1,4 @@
 import clsx from 'clsx'
-import { type Metadata } from 'next'
 import { Epilogue } from 'next/font/google'
 
 import '@/styles/tailwind.css'
@@ -10,15 +9,6 @@ const epilogue = Epilogue({
   display: 'swap',
   variable: '--font-epilogue',
 })
-
-export const metadata: Metadata = {
-  title: {
-    template: '%s - Chowdhary.org',
-    default: 'Chowdhary.org',
-  },
-  description:
-    'At Chowdhary.org, we are a nonprofit harnessing the power of technology to open doors to a better future.',
-}
 
 export default function RootLayout({
   children,

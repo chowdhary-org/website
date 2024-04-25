@@ -2,7 +2,7 @@
 
 This repository contains the common source code of two websites, Chowdhary.org and Chowdhary.co. It uses React with Next.js and Tailwind CSS.
 
-##  Repository Structure
+## Repository Structure
 
 ```sh
 └── website/
@@ -42,12 +42,12 @@ This repository contains the common source code of two websites, Chowdhary.org a
     └── tsconfig.json
 ```
 
-##  Modules
+## Modules
 
 <details closed><summary>.</summary>
 
 | File                                                                                          | Summary                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| ---                                                                                           | ---                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [next.config.js](https://github.com/chowdhary-org/website/blob/master/next.config.js)         | Enables static site generation and image optimization with export output and unoptimized images in Next.js project.                                                                                                                                                                                                                                                                                                        |
 | [tailwind.config.ts](https://github.com/chowdhary-org/website/blob/master/tailwind.config.ts) | Customizes Tailwind CSS settings for the websites responsive typography, colors, and layouts, utilizing Tailwinds theming capabilities and third-party plugins. Enhances the overall user interface design by defining font sizes, colors, border radii, and maximum widths.                                                                                                                                               |
 | [prettier.config.js](https://github.com/chowdhary-org/website/blob/master/prettier.config.js) | Enforce consistent coding style by configuring Prettier with single quotes, no semicolons, and a Tailwind CSS plugin.                                                                                                                                                                                                                                                                                                      |
@@ -61,7 +61,7 @@ This repository contains the common source code of two websites, Chowdhary.org a
 <details closed><summary>public</summary>
 
 | File                                                                                                                   | Summary                                                                                                                                                                                                                        |
-| ---                                                                                                                    | ---                                                                                                                                                                                                                            |
+| ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [CNAME](https://github.com/chowdhary-org/website/blob/master/public/CNAME)                                             | Maps domain chowdhary.org to the website, enabling access to the site via the custom domain. This file plays a critical role in directing incoming traffic to the correct web content in the parent repository's architecture. |
 | [.nojekyll](https://github.com/chowdhary-org/website/blob/master/public/.nojekyll)                                     | Enables hosting static assets by preventing Jekyll processing on GitHub Pages, ensuring proper rendering of files like icons, logos, and manifest files in the projects public directory.                                      |
 | [site.webmanifest](https://github.com/chowdhary-org/website/blob/master/public/site.webmanifest)                       | Defines branding and display properties for Chowdhary.org when saved to a users mobile device. Specifies icons, colors, and display mode for a personalized web app experience.                                                |
@@ -72,7 +72,7 @@ This repository contains the common source code of two websites, Chowdhary.org a
 <details closed><summary>.github.workflows</summary>
 
 | File                                                                                                | Summary                                                                                                                                                                                                           |
-| ---                                                                                                 | ---                                                                                                                                                                                                               |
+| --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [dispatch.yml](https://github.com/chowdhary-org/website/blob/master/.github/workflows/dispatch.yml) | Orchestrates CI/CD workflows through GitHub Actions.-Triggers build and deployment pipelines.-Enhances automation and streamlines development processes.-Integrates seamlessly with the repositorys architecture. |
 
 </details>
@@ -80,7 +80,7 @@ This repository contains the common source code of two websites, Chowdhary.org a
 <details closed><summary>src.app</summary>
 
 | File                                                                                        | Summary                                                                                                                                                                                                                          |
-| ---                                                                                         | ---                                                                                                                                                                                                                              |
+| ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [layout.tsx](https://github.com/chowdhary-org/website/blob/master/src/app/layout.tsx)       | Defines metadata and layout for Chowdhary.org, incorporating custom fonts and essential styling. Maintains consistent branding and content structure across the website.                                                         |
 | [not-found.tsx](https://github.com/chowdhary-org/website/blob/master/src/app/not-found.tsx) | Defines a NotFound UI component structure without footer, displaying a 404 message and offering a button to return home. It utilizes foundational components within the websites architecture for consistent styling and layout. |
 
@@ -89,7 +89,7 @@ This repository contains the common source code of two websites, Chowdhary.org a
 <details closed><summary>src.app.foundation</summary>
 
 | File                                                                                             | Summary                                                                                                                                                                                                                                              |
-| ---                                                                                              | ---                                                                                                                                                                                                                                                  |
+| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [layout.tsx](https://github.com/chowdhary-org/website/blob/master/src/app/foundation/layout.tsx) | Defines MainLayout component to render children within Layout component, facilitating consistent page structure across the website repository.                                                                                                       |
 | [page.tsx](https://github.com/chowdhary-org/website/blob/master/src/app/foundation/page.tsx)     | Combines Hero, Schedule, Projects, Sponsors, and Newsletter components to compose the Home page of the website. This file orchestrates the layout and content structure critical for the foundation of the parent repositorys frontend architecture. |
 
@@ -98,7 +98,7 @@ This repository contains the common source code of two websites, Chowdhary.org a
 <details closed><summary>src.app.foundation.components</summary>
 
 | File                                                                                                                          | Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| ---                                                                                                                           | ---                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [Projects.tsx](https://github.com/chowdhary-org/website/blob/master/src/app/foundation/components/Projects.tsx)               | Illustrates project highlights creatively with images and narratives, inviting engagement. Displays a curated collection of impactful initiatives and their stories, connecting users with the organizations vision and founder.                                                                                                                                                                                                                                         |
 | [Newsletter.tsx](https://github.com/chowdhary-org/website/blob/master/src/app/foundation/components/Newsletter.tsx)           | Implements a newsletter section for grant applications with inputs for name, email, topic selection, and message submission functionality. Designed with a visually appealing layout using Tailwind CSS classes.                                                                                                                                                                                                                                                         |
 | [Hero.tsx](https://github.com/chowdhary-org/website/blob/master/src/app/foundation/components/Hero.tsx)                       | Illustrates a Hero section on the Chowdhary.org website, showcasing the organizations mission. Utilizes BackgroundImage, Button, and Container components to present the technology-focused narrative and encourage grant applications.                                                                                                                                                                                                                                  |
@@ -118,7 +118,7 @@ This repository contains the common source code of two websites, Chowdhary.org a
 <details closed><summary>src.app.holdings</summary>
 
 | File                                                                                           | Summary                                                                                                                                                                                                        |
-| ---                                                                                            | ---                                                                                                                                                                                                            |
+| ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [layout.tsx](https://github.com/chowdhary-org/website/blob/master/src/app/holdings/layout.tsx) | Defines MainLayout component in the holdings section, import Layout from @/app/holdings/components/Layout. It renders children within Layout component. Key for structuring content in the website repository. |
 | [page.tsx](https://github.com/chowdhary-org/website/blob/master/src/app/holdings/page.tsx)     | Displays hero section, schedule, projects, sponsors, and newsletter on the homepage, contributing to the functionality of the holdings page in the website repository.                                         |
 
@@ -127,7 +127,7 @@ This repository contains the common source code of two websites, Chowdhary.org a
 <details closed><summary>src.app.holdings.components</summary>
 
 | File                                                                                                                        | Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ---                                                                                                                         | ---                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Projects.tsx](https://github.com/chowdhary-org/website/blob/master/src/app/holdings/components/Projects.tsx)               | Illustrates project descriptions with status labels, URLs, and summaries rendered in a dynamic grid layout. Prominently displays a tech entrepreneurs visionary message alongside a curated list of ventures, reflecting the repositorys UI component integration within a funding platform's web page.                                                                                                                                                                         |
 | [Newsletter.tsx](https://github.com/chowdhary-org/website/blob/master/src/app/holdings/components/Newsletter.tsx)           | Implements a newsletter section for investment applications and community event sponsorship. Allows users to submit names, emails, topics, and messages through a form. Designed to accelerate humanitys progress through technological change.                                                                                                                                                                                                                                 |
 | [Hero.tsx](https://github.com/chowdhary-org/website/blob/master/src/app/holdings/components/Hero.tsx)                       | Defines a Hero component rendering a prominent title and message in the websites holdings section, conveying the accelerators mission and values. Incorporated with a background image, styled container, and an actionable call-to-action button for potential investors.                                                                                                                                                                                                      |
@@ -147,18 +147,18 @@ This repository contains the common source code of two websites, Chowdhary.org a
 <details closed><summary>src.styles</summary>
 
 | File                                                                                         | Summary                                                                                                                                                                                                    |
-| ---                                                                                          | ---                                                                                                                                                                                                        |
+| -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [tailwind.css](https://github.com/chowdhary-org/website/blob/master/src/styles/tailwind.css) | Enhances styling consistency by applying Tailwind CSS utilities and base styles. Defines a layout rule for full-width parent-relative links, contributing to a unified design language across the website. |
 
 </details>
 
-##  Getting Started
+## Getting Started
 
 **System Requirements:**
 
-* **TypeScript**: `version x.y.z`
+- **TypeScript**: `version x.y.z`
 
-###  Installation
+### Installation
 
 <h4>From <code>source</code></h4>
 
@@ -169,26 +169,28 @@ This repository contains the common source code of two websites, Chowdhary.org a
 > ```
 >
 > 2. Change to the project directory:
+>
 > ```console
 > $ cd website
 > ```
 >
 > 3. Install the dependencies:
+>
 > ```console
 > $ npm install
 > ```
 
-###  Usage
+### Usage
 
 <h4>From <code>source</code></h4>
 
 > Run website using the command below:
+>
 > ```console
 > $ npm run dev
 > ```
 
-
-##  Contributing
+## Contributing
 
 Contributions are welcome! Here are several ways you can contribute:
 

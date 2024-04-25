@@ -64,10 +64,10 @@ const projects: Array<Day> = [
 function DaySummary({ day }: { day: Day }) {
   return (
     <>
-      <h3 className="text-primary-900 text-2xl font-semibold leading-tight tracking-tight">
+      <h3 className="text-2xl font-semibold leading-tight tracking-tight text-primary-900">
         {day.title}
       </h3>
-      <p className="text-primary-900 mt-1.5 text-base tracking-tight">
+      <p className="mt-1.5 text-base tracking-tight text-primary-900">
         {day.summary}
       </p>
     </>
@@ -80,7 +80,7 @@ function ScheduleStatic() {
       {projects.map((day) => (
         <section
           key={day.title}
-          className="shadow-primary-900/5 rounded-b-lg bg-white/60 shadow-xl backdrop-blur"
+          className="rounded-b-lg bg-white/60 shadow-xl shadow-primary-900/5 backdrop-blur"
         >
           <img
             alt=""
@@ -107,21 +107,21 @@ export function Projects() {
     <section id="projects" aria-label="Schedule" className="py-20 sm:py-32">
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-          <blockquote className="text-primary-600 font-display text-4xl font-bold tracking-tighter sm:text-5xl">
+          <blockquote className="font-display text-4xl font-bold tracking-tighter text-primary-600 sm:text-5xl">
             &ldquo;Through the lens of technology, we see not just challenges,
             but opportunities to make a lasting difference.&rdquo;
           </blockquote>
-          <p className="text-primary-900 mt-4 font-display text-2xl tracking-tight">
+          <p className="mt-4 font-display text-2xl tracking-tight text-primary-900">
             At Chowdhary.org, every innovation is a step towards a future where
             technology serves humanity in its noblest form.
           </p>
-          <div className="text-primary-900 mt-2 font-display text-lg not-italic">
+          <div className="mt-2 font-display text-lg not-italic text-primary-900">
             &ndash;{' '}
             <a
               href="https://anandchowdhary.com"
               target="_blank"
               rel="noopener"
-              className="focus-visible:outline-primary-500 text-primary-800 rounded font-bold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2"
+              className="rounded font-bold text-primary-800 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
             >
               Anand Chowdhary
             </a>
@@ -132,7 +132,7 @@ export function Projects() {
       <div className="relative mt-14 sm:mt-24">
         <BackgroundImage
           position="right"
-          className="text-primary-300 -bottom-32 -top-40"
+          className="-bottom-32 -top-40 text-primary-300"
         />
         <Container className="relative">
           <ScheduleStatic />
