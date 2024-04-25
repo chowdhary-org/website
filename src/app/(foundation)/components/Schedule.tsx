@@ -1,7 +1,7 @@
 'use client'
 
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
+import { Button } from '@/app/(foundation)/components/Button'
+import { Container } from '@/app/(foundation)/components/Container'
 
 export function Schedule() {
   return (

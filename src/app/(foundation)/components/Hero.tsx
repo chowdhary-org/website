@@ -1,11 +1,11 @@
-import { BackgroundImage } from '@/components/BackgroundImage'
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
+import { BackgroundImage } from '@/app/(foundation)/components/BackgroundImage'
+import { Button } from '@/app/(foundation)/components/Button'
+import { Container } from '@/app/(foundation)/components/Container'
 
 export function Hero() {
   return (
     <div className="relative py-20 sm:pb-24 sm:pt-36">
-      <BackgroundImage className="-bottom-14 -top-36" />
+      <BackgroundImage className="text-primary-300 -bottom-14 -top-36" />
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
           <h1 className="text-primary-600 font-display text-5xl font-bold tracking-tighter sm:text-7xl">

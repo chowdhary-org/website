@@ -27,7 +27,7 @@ export function BackgroundImage({
           fillRule="evenodd"
           clipRule="evenodd"
           d="M58.5 0H43.875V14.2866L29.25 14.2866L29.25 29.25H14.625L14.625 44.0802H0V58.7052V73.3302H14.625L14.625 87.75H29.25L29.25 87.8076L29.25 102.433H44.287V117H58.9119H58.912H73.5369V102.433H87.75V87.8076V87.75H102.375V73.125H117V58.5V43.875H102.375V29.25H87.75V14.2866L73.125 14.2866V0H58.5Z"
-          fill="#00EC97"
+          fill="currentColor"
         />
         <rect
           opacity="0.63"
@@ -35,7 +35,7 @@ export function BackgroundImage({
           y="102.375"
           width="14.625"
           height="14.625"
-          fill="#00EC97"
+          fill="currentColor"
         />
         <rect
           opacity="0.86"
@@ -43,7 +43,7 @@ export function BackgroundImage({
           y="87.75"
           width="14.625"
           height="14.625"
-          fill="#00EC97"
+          fill="currentColor"
         />
         <rect
           opacity="0.86"
@@ -51,7 +51,7 @@ export function BackgroundImage({
           y="14.625"
           width="14.625"
           height="14.625"
-          fill="#00EC97"
+          fill="currentColor"
         />
         <rect
           opacity="0.86"
@@ -59,7 +59,7 @@ export function BackgroundImage({
           y="87.75"
           width="14.625"
           height="14.625"
-          fill="#00EC97"
+          fill="currentColor"
         />
         <rect
           opacity="0.63"
@@ -67,21 +67,21 @@ export function BackgroundImage({
           y="102.375"
           width="14.625"
           height="14.625"
-          fill="#00EC97"
+          fill="currentColor"
         />
         <rect
           opacity="0.63"
           x="29.25"
           width="14.625"
           height="14.625"
-          fill="#00EC97"
+          fill="currentColor"
         />
         <rect
           opacity="0.63"
           x="73.125"
           width="14.625"
           height="14.625"
-          fill="#00EC97"
+          fill="currentColor"
         />
         <rect
           opacity="0.63"
@@ -90,7 +90,7 @@ export function BackgroundImage({
           width="14.625"
           height="14.625"
           transform="rotate(90 14.625 29.4553)"
-          fill="#00EC97"
+          fill="currentColor"
         />
         <rect
           opacity="0.63"
@@ -99,7 +99,7 @@ export function BackgroundImage({
           width="14.625"
           height="14.625"
           transform="rotate(90 14.625 73.125)"
-          fill="#00EC97"
+          fill="currentColor"
         />
         <rect
           opacity="0.63"
@@ -108,7 +108,7 @@ export function BackgroundImage({
           width="14.625"
           height="14.625"
           transform="rotate(90 117 29.25)"
-          fill="#00EC97"
+          fill="currentColor"
         />
         <rect
           opacity="0.63"
@@ -117,7 +117,7 @@ export function BackgroundImage({
           width="14.625"
           height="14.625"
           transform="rotate(90 117 73.125)"
-          fill="#00EC97"
+          fill="currentColor"
         />
         <rect
           opacity="0.86"
@@ -125,7 +125,7 @@ export function BackgroundImage({
           y="14.625"
           width="14.625"
           height="14.625"
-          fill="#00EC97"
+          fill="currentColor"
         />
       </svg>
       <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />

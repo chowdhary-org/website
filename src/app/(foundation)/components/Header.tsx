@@ -1,7 +1,7 @@
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { DiamondIcon } from '@/components/DiamondIcon'
-import { Logo } from '@/components/Logo'
+import { Button } from '@/app/(foundation)/components/Button'
+import { Container } from '@/app/(foundation)/components/Container'
+import { DiamondIcon } from '@/app/(foundation)/components/DiamondIcon'
+import { Logo } from '@/app/(foundation)/components/Logo'
 import Link from 'next/link'
 
 export function Header() {

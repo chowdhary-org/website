@@ -1,8 +1,8 @@
 'use client'
 
-import { BackgroundImage } from '@/components/BackgroundImage'
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
+import { BackgroundImage } from '@/app/(foundation)/components/BackgroundImage'
+import { Button } from '@/app/(foundation)/components/Button'
+import { Container } from '@/app/(foundation)/components/Container'
 import { IconChevronRight } from '@tabler/icons-react'
 
 interface Day {
@@ -118,7 +118,10 @@ export function Projects() {
         </div>
       </Container>
       <div className="relative mt-14 sm:mt-24">
-        <BackgroundImage position="right" className="-bottom-32 -top-40" />
+        <BackgroundImage
+          position="right"
+          className="text-primary-300 -bottom-32 -top-40"
+        />
         <Container className="relative">
           <ScheduleStatic />
         </Container>

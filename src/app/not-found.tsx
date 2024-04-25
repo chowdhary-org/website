@@ -1,13 +1,13 @@
-import { BackgroundImage } from '@/components/BackgroundImage'
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { Layout } from '@/components/Layout'
+import { BackgroundImage } from '@/app/(foundation)/components/BackgroundImage'
+import { Button } from '@/app/(foundation)/components/Button'
+import { Container } from '@/app/(foundation)/components/Container'
+import { Layout } from '@/app/(foundation)/components/Layout'
 
 export default function NotFound() {
   return (
     <Layout showFooter={false}>
       <div className="relative flex h-full items-center py-20 sm:py-36">
-        <BackgroundImage className="-top-36 bottom-0" />
+        <BackgroundImage className="text-primary-300 -top-36 bottom-0" />
         <Container className="relative flex w-full flex-col items-center">
           <p className="text-primary-900 font-display text-2xl tracking-tight">
             404
