@@ -1,4 +1,4 @@
-import { Layout } from '@/app/holdings/components/Layout'
+import { Layout } from '@/app/foundation/components/Layout'
 import type { Metadata, Viewport } from 'next'
 
 export const viewport: Viewport = {
