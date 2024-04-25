@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="flex-none py-16">
       <Container className="flex flex-col items-center justify-between md:flex-row">
-        <Logo className="h-12 w-auto text-slate-900" />
+        <Logo className="h-12 w-auto text-teal-500" />
         <nav className="mt-4 flex items-center space-x-4 sm:mt-0">
           <a
             href="https://linkedin.com/company/chowdhary"

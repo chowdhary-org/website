@@ -11,7 +11,7 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M58.5 0H43.875V14.2866L29.25 14.2866L29.25 29.25H14.625L14.625 44.0802H0V58.7052V73.3302H14.625L14.625 87.75H29.25L29.25 87.8076L29.25 102.433H44.287V117H58.9119H58.912H73.5369V102.433H87.75V87.8076V87.75H102.375V73.125H117V58.5V43.875H102.375V29.25H87.75V14.2866L73.125 14.2866V0H58.5Z"
-        fill="#00EC97"
+        fill="currentColor"
       />
       <rect
         opacity="0.63"
@@ -19,7 +19,7 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
         y="102.375"
         width="14.625"
         height="14.625"
-        fill="#00EC97"
+        fill="currentColor"
       />
       <rect
         opacity="0.86"
@@ -27,7 +27,7 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
         y="87.75"
         width="14.625"
         height="14.625"
-        fill="#00EC97"
+        fill="currentColor"
       />
       <rect
         opacity="0.86"
@@ -35,7 +35,7 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
         y="14.625"
         width="14.625"
         height="14.625"
-        fill="#00EC97"
+        fill="currentColor"
       />
       <rect
         opacity="0.86"
@@ -43,7 +43,7 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
         y="87.75"
         width="14.625"
         height="14.625"
-        fill="#00EC97"
+        fill="currentColor"
       />
       <rect
         opacity="0.63"
@@ -51,21 +51,21 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
         y="102.375"
         width="14.625"
         height="14.625"
-        fill="#00EC97"
+        fill="currentColor"
       />
       <rect
         opacity="0.63"
         x="29.25"
         width="14.625"
         height="14.625"
-        fill="#00EC97"
+        fill="currentColor"
       />
       <rect
         opacity="0.63"
         x="73.125"
         width="14.625"
         height="14.625"
-        fill="#00EC97"
+        fill="currentColor"
       />
       <rect
         opacity="0.63"
@@ -74,7 +74,7 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
         width="14.625"
         height="14.625"
         transform="rotate(90 14.625 29.4553)"
-        fill="#00EC97"
+        fill="currentColor"
       />
       <rect
         opacity="0.63"
@@ -83,7 +83,7 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
         width="14.625"
         height="14.625"
         transform="rotate(90 14.625 73.125)"
-        fill="#00EC97"
+        fill="currentColor"
       />
       <rect
         opacity="0.63"
@@ -92,7 +92,7 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
         width="14.625"
         height="14.625"
         transform="rotate(90 117 29.25)"
-        fill="#00EC97"
+        fill="currentColor"
       />
       <rect
         opacity="0.63"
@@ -101,7 +101,7 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
         width="14.625"
         height="14.625"
         transform="rotate(90 117 73.125)"
-        fill="#00EC97"
+        fill="currentColor"
       />
       <rect
         opacity="0.86"
@@ -109,7 +109,7 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
         y="14.625"
         width="14.625"
         height="14.625"
-        fill="#00EC97"
+        fill="currentColor"
       />
       <path
         d="M177.923 83.3625C173.163 83.3625 168.955 82.385 165.3 80.43C161.645 78.475 158.783 75.7267 156.715 72.185C154.647 68.6433 153.613 64.4925 153.613 59.7325C153.613 55.0008 154.647 50.8925 156.715 47.4075C158.783 43.9225 161.645 41.245 165.3 39.375C168.955 37.4767 173.163 36.5275 177.923 36.5275C181.493 36.5275 184.652 37.0517 187.4 38.1C190.148 39.1483 192.458 40.5508 194.328 42.3075C196.226 44.0358 197.671 45.9483 198.663 48.045C199.654 50.1133 200.15 52.1817 200.15 54.25C200.15 54.3067 200.15 54.3633 200.15 54.42C200.15 54.4767 200.15 54.5333 200.15 54.59H189.058C189.058 54.4483 189.043 54.2925 189.015 54.1225C188.987 53.9525 188.958 53.7825 188.93 53.6125C188.703 52.1675 188.123 50.8642 187.188 49.7025C186.253 48.5125 185.006 47.5633 183.448 46.855C181.889 46.1467 180.005 45.7925 177.795 45.7925C175.443 45.7925 173.29 46.3167 171.335 47.365C169.408 48.385 167.864 49.9292 166.703 51.9975C165.569 54.0658 165.003 56.6442 165.003 59.7325C165.003 62.7925 165.569 65.3992 166.703 67.5525C167.836 69.6775 169.366 71.3067 171.293 72.44C173.248 73.545 175.415 74.0975 177.795 74.0975C180.317 74.0975 182.371 73.715 183.958 72.95C185.573 72.1567 186.791 71.1083 187.613 69.805C188.434 68.4733 188.902 67.0283 189.015 65.47H200.15C200.15 67.5667 199.668 69.6775 198.705 71.8025C197.742 73.8992 196.325 75.8258 194.455 77.5825C192.585 79.3392 190.262 80.7417 187.485 81.79C184.737 82.8383 181.549 83.3625 177.923 83.3625Z"
