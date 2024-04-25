@@ -9,7 +9,10 @@ export function BackgroundImage({
 }) {
   return (
     <div
-      className={clsx('absolute inset-0 overflow-hidden bg-teal-50', className)}
+      className={clsx(
+        'bg-primary-50 absolute inset-0 overflow-hidden',
+        className,
+      )}
     >
       <svg
         className={clsx(

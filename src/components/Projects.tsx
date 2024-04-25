@@ -64,10 +64,10 @@ const projects: Array<Day> = [
 function DaySummary({ day }: { day: Day }) {
   return (
     <>
-      <h3 className="text-2xl font-semibold leading-tight tracking-tight text-teal-900">
+      <h3 className="text-primary-900 text-2xl font-semibold leading-tight tracking-tight">
         {day.title}
       </h3>
-      <p className="mt-1.5 text-base tracking-tight text-teal-900">
+      <p className="text-primary-900 mt-1.5 text-base tracking-tight">
         {day.summary}
       </p>
     </>
@@ -80,7 +80,7 @@ function ScheduleStatic() {
       {projects.map((day) => (
         <section
           key={day.title}
-          className="rounded-b-lg bg-white/60 shadow-xl shadow-teal-900/5 backdrop-blur"
+          className="shadow-primary-900/5 rounded-b-lg bg-white/60 shadow-xl backdrop-blur"
         >
           <img
             alt=""
@@ -107,11 +107,11 @@ export function Projects() {
     <section id="projects" aria-label="Schedule" className="py-20 sm:py-32">
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-          <blockquote className="font-display text-4xl font-bold tracking-tighter text-teal-600 sm:text-5xl">
+          <blockquote className="text-primary-600 font-display text-4xl font-bold tracking-tighter sm:text-5xl">
             &ldquo;Through the lens of technology, we see not just challenges,
             but opportunities to make a lasting difference.&rdquo;
           </blockquote>
-          <p className="mt-4 font-display text-2xl tracking-tight text-teal-900">
+          <p className="text-primary-900 mt-4 font-display text-2xl tracking-tight">
             At Chowdhary.org, every innovation is a step towards a future where
             technology serves humanity in its noblest form.
           </p>

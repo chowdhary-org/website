@@ -7,24 +7,24 @@ type ButtonProps =
 
 export function Button({ className, children, ...props }: ButtonProps) {
   className = clsx(
-    'inline-flex justify-center group bg-teal-600 py-3 px-5 text-base font-semibold text-white hover:bg-teal-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-500 active:text-white/70 -translate-x-6',
+    'inline-flex justify-center group bg-primary-600 py-3 px-5 text-base font-semibold text-white hover:bg-primary-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 active:text-white/70 -translate-x-6',
     className,
   )
 
   return typeof props.href === 'undefined' ? (
     <div className="relative">
       <button className={className}>
-        <ButtonLeft className="absolute left-px top-0 h-full -translate-x-full text-teal-600 group-hover:text-teal-500 " />
+        <ButtonLeft className="text-primary-600 group-hover:text-primary-500 absolute left-px top-0 h-full -translate-x-full " />
         {children}
-        <ButtonLeft className="absolute right-px top-0 h-full translate-x-full rotate-180 text-teal-600 group-hover:text-teal-500" />
+        <ButtonLeft className="text-primary-600 group-hover:text-primary-500 absolute right-px top-0 h-full translate-x-full rotate-180" />
       </button>
     </div>
   ) : (
     <div className="relative">
       <Link href={props.href} className={className}>
-        <ButtonLeft className="absolute left-px top-0 h-full -translate-x-full text-teal-600 group-hover:text-teal-500" />
+        <ButtonLeft className="text-primary-600 group-hover:text-primary-500 absolute left-px top-0 h-full -translate-x-full" />
         {children}
-        <ButtonLeft className="absolute right-px top-0 h-full translate-x-full rotate-180 text-teal-600 group-hover:text-teal-500" />
+        <ButtonLeft className="text-primary-600 group-hover:text-primary-500 absolute right-px top-0 h-full translate-x-full rotate-180" />
       </Link>
     </div>
   )

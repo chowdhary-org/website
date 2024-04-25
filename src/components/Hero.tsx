@@ -8,11 +8,11 @@ export function Hero() {
       <BackgroundImage className="-bottom-14 -top-36" />
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
-          <h1 className="font-display text-5xl font-bold tracking-tighter text-teal-600 sm:text-7xl">
+          <h1 className="text-primary-600 font-display text-5xl font-bold tracking-tighter sm:text-7xl">
             Technology for good.
           </h1>
-          <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-teal-900">
-            <p className="text-3xl font-bold text-teal-700">
+          <div className="text-primary-900 mt-6 space-y-6 font-display text-2xl tracking-tight">
+            <p className="text-primary-700 text-3xl font-bold">
               We are a nonprofit harnessing the power of technology to open
               doors to a better future.
             </p>
