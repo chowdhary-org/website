@@ -44,8 +44,8 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M64.5 0H48.375V15.7518L32.25 15.7518V32.25H16.125L16.125 48.6015H0V64.7265V80.8515H16.125L16.125 96.75H32.25L32.25 96.8135V112.938H48.8293V129H64.9542H64.9543H81.0792V112.938H96.75V96.8135V96.75H112.875V80.625H129V64.5V48.375H112.875V32.25H96.75V15.7518L80.625 15.7518V0H64.5Z"
         fill="currentColor"
       />

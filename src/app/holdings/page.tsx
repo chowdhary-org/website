@@ -1,16 +1,18 @@
+import { Collaborators } from '@/app/common/Collaborators'
+import { Foundation } from '@/app/common/Foundation'
+import { Holdings } from '@/app/common/Holdings'
 import { Hero } from '@/app/holdings/components/Hero'
 import { Newsletter } from '@/app/holdings/components/Newsletter'
 import { Projects } from '@/app/holdings/components/Projects'
-import { Schedule } from '@/app/holdings/components/Schedule'
-import { Sponsors } from '@/app/holdings/components/Sponsors'
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Schedule />
+      <Holdings />
       <Projects />
-      <Sponsors />
+      <Foundation externalLink />
+      <Collaborators />
       <Newsletter />
     </>
   )

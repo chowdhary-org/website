@@ -125,7 +125,7 @@ export function Projects() {
             >
               Anand Chowdhary
             </a>
-            , founder of Chowdhary.co and Chowdhary.org
+            , founder
           </div>
         </div>
       </Container>

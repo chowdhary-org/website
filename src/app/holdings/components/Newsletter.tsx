@@ -48,41 +48,27 @@ export function Newsletter() {
                 />
               </label>
               <label className="block space-y-2">
+                <div className="font-bold text-primary-700">Startup name</div>
+                <input
+                  name="organization"
+                  autoComplete="organization"
+                  type="text"
+                  className="w-full rounded-lg border px-5 py-4 shadow focus:outline-none focus:ring-2 focus:ring-primary-500"
+                  placeholder="What's your company's name?"
+                />
+              </label>
+              <label className="block space-y-2">
                 <div className="font-bold text-primary-700">Email</div>
                 <input
                   name="email"
                   autoComplete="email"
                   type="email"
                   className="w-full rounded-lg border px-5 py-4 shadow focus:outline-none focus:ring-2 focus:ring-primary-500"
-                  placeholder="What's your work or school email?"
+                  placeholder="What's your work email?"
                 />
               </label>
-              <fieldset className="space-y-2">
-                <legend className="font-bold text-primary-700">Topic</legend>
-                <label className="flex items-center space-x-2">
-                  <input
-                    name="topic"
-                    value="Invest in my impact startup"
-                    type="radio"
-                  />
-                  <div>Invest in my startup</div>
-                </label>
-                <label className="flex items-center space-x-2">
-                  <input
-                    name="topic"
-                    value="Sponsor my community event"
-                    type="radio"
-                    defaultChecked
-                  />
-                  <div>Sponsor my community event</div>
-                </label>
-                <label className="flex items-center space-x-2">
-                  <input name="topic" value="Something else" type="radio" />
-                  <div>Something else</div>
-                </label>
-              </fieldset>
               <label className="block space-y-2">
-                <div className="font-bold text-primary-700">Message</div>
+                <div className="font-bold text-primary-700">Memo</div>
                 <textarea
                   name="message"
                   rows={5}
@@ -91,7 +77,7 @@ export function Newsletter() {
                 />
               </label>
               <div className="ml-12">
-                <Button type="submit">Send message</Button>
+                <Button type="submit">Send application</Button>
               </div>
             </form>
           </div>
