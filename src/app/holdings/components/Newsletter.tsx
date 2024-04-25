@@ -1,5 +1,5 @@
+import { Container } from '@/app/common/Container'
 import { Button } from '@/app/holdings/components/Button'
-import { Container } from '@/app/holdings/components/Container'
 
 function ArrowRightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (

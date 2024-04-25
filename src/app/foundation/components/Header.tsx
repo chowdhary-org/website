@@ -1,6 +1,6 @@
+import { Container } from '@/app/common/Container'
 import { Logo } from '@/app/common/Logo'
 import { Button } from '@/app/holdings/components/Button'
-import { Container } from '@/app/holdings/components/Container'
 
 export function Header() {
   return (

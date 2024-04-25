@@ -1,6 +1,6 @@
+import { Container } from '@/app/common/Container'
 import { BackgroundImage } from '@/app/holdings/components/BackgroundImage'
 import { Button } from '@/app/holdings/components/Button'
-import { Container } from '@/app/holdings/components/Container'
 
 export function Hero() {
   return (

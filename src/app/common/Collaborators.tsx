@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { Container } from '@/app/foundation/components/Container'
+import { Container } from '@/app/common/Container'
 
 const sponsors = [
   {

@@ -1,7 +1,7 @@
 'use client'
 
+import { Container } from '@/app/common/Container'
 import { BackgroundImage } from '@/app/holdings/components/BackgroundImage'
-import { Container } from '@/app/holdings/components/Container'
 import clsx from 'clsx'
 
 interface Day {
