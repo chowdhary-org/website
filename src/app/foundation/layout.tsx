@@ -2,7 +2,7 @@ import { Layout } from '@/app/foundation/components/Layout'
 import type { Metadata, Viewport } from 'next'
 
 export const viewport: Viewport = {
-  themeColor: '#0ca5e9',
+  themeColor: '#15b8a6',
 }
 
 export const metadata: Metadata = {
