@@ -20,10 +20,11 @@ const projects: Array<Day> = [
       'All-in-one AI sales platform for scalable and autonomous B2B sales (YC S21).',
   },
   {
-    title: 'LLM platform',
-    label: 'Stealth',
+    title: 'Langbase',
+    label: 'Active',
+    href: 'https://langbase.com',
     summary:
-      'Developer platform for building LLM apps with open source libraries.',
+      'Composable AI developer platform to ship AI features in minutes, not months.',
   },
   {
     title: 'AI video platform',
