@@ -27,6 +27,13 @@ const projects: Array<Day> = [
       'Composable AI developer platform to ship AI features in minutes, not months.',
   },
   {
+    title: 'humansby.ai',
+    label: 'Active',
+    href: 'https://www.humansby.ai',
+    summary:
+      'Automating D2C ecommerce operations using fully autonomous AI agents.',
+  },
+  {
     title: 'AI video platform',
     label: 'Stealth',
     summary:
