@@ -27,11 +27,11 @@ const projects: Array<Day> = [
       'Composable AI developer platform to ship AI features in minutes, not months.',
   },
   {
-    title: 'humansby.ai',
+    title: 'Paleon',
     label: 'Active',
-    href: 'https://www.humansby.ai',
+    href: 'https://www.paleon.io',
     summary:
-      'Automating D2C ecommerce operations using fully autonomous AI agents.',
+      'AI-powered automated dispute resolution for social commerce.',
   },
   {
     title: 'AI video platform',
