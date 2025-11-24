@@ -6,7 +6,8 @@ const nextConfig = {
     return [
       {
         source: '/gita-book-2025',
-        destination: 'https://chowdhary-org.github.io/bhagavadgita-ka-saral-paath/'
+        destination: 'https://chowdhary-org.github.io/bhagavadgita-ka-saral-paath/',
+        permanent: false
       },
     ]
   },
