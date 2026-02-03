@@ -21,6 +21,34 @@ export interface Company {
 
 export const companies: Company[] = [
   {
+    slug: 'airweave',
+    title: 'Airweave',
+    label: 'Active',
+    href: 'https://airweave.ai',
+    logo: '/holdings/avatars/airweave.jpg',
+    summary: 'Open-source context retrieval layer for smarter AI agents',
+    description: [
+      'Airweave is an open-source AI infrastructure company that provides a context retrieval layer for AI agents. The platform enables AI agents and RAG pipelines to retrieve relevant context from multiple apps and databases in a single request, connecting to productivity tools like Google Drive, Slack, Notion, GitHub, and databases like Postgres to transform their contents into searchable, agent-ready knowledge bases.',
+      'Rather than requiring separate integrations for each data source, Airweave continuously syncs information from connected sources and exposes them through a unified search interface. Common use cases include internal knowledge assistants, customer support agents, and multi-source context retrieval across company knowledge bases, cloud drives, and SaaS tools.',
+      'Backed by Y Combinator (X25), Airweave raised $6 million in seed funding led by FCVC with participation from LUX Capital, Orange Collective, Pioneer Fund, and notable investors including Shay Banon (Founder of Elastic). The platform offers both an open-source version on GitHub and a hosted platform with SDKs for Python and JavaScript.',
+    ],
+    founded: '2025',
+    location: 'San Francisco, CA',
+    tags: ['AI', 'Developer Tools', 'Open Source', 'Y Combinator X25'],
+    founders: [
+      {
+        name: 'Lennert Jansen',
+        avatar: '/holdings/avatars/lennert-jansen.jpg',
+        linkedin: 'https://www.linkedin.com/in/lennertjansen/',
+      },
+      {
+        name: 'Rauf Akdemir',
+        avatar: '/holdings/avatars/rauf-akdemir.jpg',
+        linkedin: 'https://www.linkedin.com/in/orhan-rauf-akdemir/',
+      },
+    ],
+  },
+  {
     slug: 'firstquadrant',
     title: 'FirstQuadrant',
     label: 'Exited',
@@ -35,7 +63,7 @@ export const companies: Company[] = [
     founded: '2021',
     ended: '2025',
     location: 'San Francisco, CA',
-    tags: ['AI', 'Sales', 'B2B', 'Y Combinator'],
+    tags: ['AI', 'Sales', 'B2B', 'Y Combinator S21'],
     founders: [
       {
         name: 'Carlo Badini',
@@ -78,7 +106,7 @@ export const companies: Company[] = [
     label: 'Active',
     href: 'https://www.paleon.io',
     logo: '/holdings/avatars/paleon.jpg',
-    summary: 'Know which creators will sell before you pay them.',
+    summary: 'Know which TikTok Shop creators will sell before you pay them',
     description: [
       'Paleon analyzes over 7,000 TikTok Shop videos to identify the exact formats, scripts, and hooks that drive sales. The platform helps brands brief creators with data, pay flat fees with confidence, and scale from 10 to 200+ engaged creators in 6 months. With one-click OAuth integration and automatic data syncing, brands can connect their TikTok Shop and start gaining insights immediately.',
       'The AI-powered platform automatically transcribes videos, analyzes tones, extracts comments, and identifies winning patterns to create a unique brand map. This transforms creator partnerships from expensive gambles into predictable revenue engines, allowing brands to identify which creators are likely to perform before paying them.',
@@ -119,7 +147,7 @@ export const companies: Company[] = [
     founded: '2020',
     ended: '2022',
     location: 'Zurich, Switzerland',
-    tags: ['Furniture', 'Interior Design', 'Rent-to-Own', 'Y Combinator'],
+    tags: ['Furniture', 'Interior Design', 'Rent-to-Own', 'Y Combinator S21'],
     founders: [
       {
         name: 'Carlo Badini',
@@ -138,7 +166,7 @@ export const companies: Company[] = [
     title: 'Oswald Labs',
     label: 'Inactive',
     logo: '/holdings/avatars/oswald-labs.jpg',
-    summary: 'Accessibility technology company for the next billion users.',
+    summary: 'Accessibility technology for the next billion users',
     description: [
       'Oswald Labs is an award-winning accessibility technology company that builds products for people with disabilities, with a mission to build technology for the next billion users by promoting accessibility and equality. The company started after winning the Code4Impact award at AngelHack Delhi 2016 for building the first web reading tool for people with dyslexia. The flagship product Agastya adds disability-friendly features to websites with a single line of JavaScript, including dyslexia-friendly modes, text-to-speech, translation to 100+ languages, high contrast options, and live chat.',
       "Other products include Shravan, the world's first end-to-end accessible smartphone platform with a patent-pending speech and vibration interface for visually impaired users, seniors, and unlettered populations; Valmiki, a browser extension that adjusts color contrast, typography, and design preferences; and Augmenta11y, an AR app for children with dyslexia that reduces reading time by over 20%.",
@@ -172,7 +200,7 @@ export const companies: Company[] = [
     title: 'Ara',
     label: 'Inactive',
     logo: '/holdings/avatars/ara.png',
-    summary: 'AI assistant for scheduling meetings over email.',
+    summary: 'AI assistant that handles meeting scheduling over email',
     description: [
       'Ara is an AI-powered assistant designed to handle meeting scheduling through email. By understanding natural language and calendar availability, Ara can autonomously coordinate meetings between multiple parties, saving time and reducing the back-and-forth typically involved in scheduling.',
       "Ara was built in collaboration with Speakup, a Dutch cloud telephony and VoIP provider founded in 2003 by Florian Overkamp. The project combines Speakup's expertise in communication infrastructure with AI-powered natural language processing to create a seamless scheduling experience. It was developed under O15Y, a venture studio founded in 2019 that builds and incubates technology companies centered around communication.",

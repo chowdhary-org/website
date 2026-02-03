@@ -18,11 +18,12 @@ export function Holdings({ externalLink }: { externalLink?: boolean }) {
             solutions.
           </p>
           <p className="mt-4 font-display text-lg tracking-tight text-primary-900">
-            <strong>Chowdhary Holdings B.V.</strong> isn&rsquo;t just about
-            funding; it&rsquo;s about building partnerships that foster growth,
-            drive change, and set new benchmarks in the tech world. Join us as
-            we embark on this journey to transform visionary ideas into
-            realities that can reshape our world.
+            <strong>Chowdhary Holdings B.V.</strong> is Anand Chowdhary&rsquo;s
+            holding company, but it isn&rsquo;t just about funding; it&rsquo;s
+            about building partnerships that foster growth, drive change, and
+            set new benchmarks in the tech world. Join us as we embark on this
+            journey to transform visionary ideas into realities that can reshape
+            our world.
           </p>
           <div className="ml-12 mt-8">
             {externalLink ? (

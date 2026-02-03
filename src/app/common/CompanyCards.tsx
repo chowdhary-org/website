@@ -5,7 +5,7 @@ import clsx from 'clsx'
 import Link from 'next/link'
 
 function CompanyCard({ company }: { company: Company }) {
-  const isYCombinator = company.tags?.includes('Y Combinator')
+  const ycTag = company.tags?.find((tag) => tag.startsWith('Y Combinator'))
 
   return (
     <>
@@ -29,7 +29,7 @@ function CompanyCard({ company }: { company: Company }) {
       <p className="mt-1.5 text-base tracking-tight text-primary-900/80">
         {company.summary}
       </p>
-      {(company.founders?.length || isYCombinator) && (
+      {(company.founders?.length || ycTag) && (
         <div className="mt-4 flex items-center justify-between gap-4">
           {company.founders && company.founders.length > 0 ? (
             <div className="flex -space-x-2">
@@ -48,7 +48,7 @@ function CompanyCard({ company }: { company: Company }) {
           ) : (
             <div />
           )}
-          {isYCombinator && (
+          {ycTag && (
             <div className="flex items-center gap-2">
               <img
                 src="https://www.ycombinator.com/favicon.ico"
@@ -56,7 +56,7 @@ function CompanyCard({ company }: { company: Company }) {
                 className="size-5 -translate-y-0.5 rounded-sm"
               />
               <span className="text-sm font-medium text-primary-700">
-                Y Combinator
+                {ycTag}
               </span>
             </div>
           )}

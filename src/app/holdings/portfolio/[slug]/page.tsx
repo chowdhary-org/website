@@ -71,7 +71,7 @@ export default async function CompanyPage({ params }: Props) {
           </div>
 
           {/* Summary */}
-          <p className="mt-6 font-display text-2xl font-bold tracking-tight text-primary-700">
+          <p className="mt-6 font-display text-2xl font-bold leading-tight tracking-tight text-primary-700">
             {company.summary}
           </p>
 
