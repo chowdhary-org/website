@@ -25,8 +25,17 @@ export function Projects() {
               className="rounded font-bold text-primary-800 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
             >
               Anand Chowdhary
+            </a>{' '}
+            &amp;{' '}
+            <a
+              href="https://sukritikapoor.com"
+              target="_blank"
+              rel="noopener"
+              className="rounded font-bold text-primary-800 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
+            >
+              Sukriti Kapoor
             </a>
-            , founder
+            , founders
           </div>
         </div>
       </Container>

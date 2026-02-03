@@ -15,8 +15,8 @@ export function Holdings({ externalLink }: { externalLink?: boolean }) {
             where deep technical execution is the competitive advantage.
           </p>
           <p className="mt-4 font-display text-lg tracking-tight text-primary-900">
-            <strong>Chowdhary Holdings B.V.</strong> is Anand Chowdhary&rsquo;s
-            holding company and early-stage fund. We write first checks into
+            <strong>Chowdhary Holdings B.V.</strong> is Anand Chowdhary and
+            Sukriti Kapoor&rsquo;s holding company and early-stage fund. We write first checks into
             companies before product-market fit and work closely with founders
             on product, hiring, and go-to-market. Our portfolio includes Y
             Combinator companies and founders who've gone on to raise from top

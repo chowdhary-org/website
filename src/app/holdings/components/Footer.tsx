@@ -5,9 +5,21 @@ import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react'
 export function Footer() {
   return (
     <footer className="flex-none py-16">
-      <Container className="flex flex-col items-center justify-between md:flex-row">
-        <Logo className="h-12 w-auto text-primary-500" />
-        <nav className="mt-4 flex items-center space-x-4 sm:mt-0">
+      <Container className="flex flex-col items-center justify-between gap-6 md:flex-row">
+        <div className="flex flex-col items-center gap-6 md:items-start">
+          <Logo className="h-12 w-auto text-primary-500" />
+          <p className="max-w-xl text-center text-xs text-gray-500 md:text-left">
+            Chowdhary Holdings B.V. is Anand Chowdhary and Sukriti
+            Kapoor&rsquo;s holding company and early-stage fund, registered in
+            the Netherlands with Chamber of Commerce number 82850526. Content is
+            for informational purposes only and does not constitute investment
+            advice. Investing in early-stage companies involves significant
+            risk, including the potential loss of capital. Past performance is
+            not indicative of future results. Please consult a qualified
+            financial advisor before making any investment decisions.
+          </p>
+        </div>
+        <nav className="flex items-center space-x-4">
           <a
             href="https://linkedin.com/company/chowdhary"
             aria-label="LinkedIn"
