@@ -57,9 +57,18 @@ export default async function CompanyPage({ params }: Props) {
           </Link>
 
           {/* Header */}
-          <h1 className="font-display text-5xl font-bold tracking-tighter text-primary-600 sm:text-7xl">
-            {company.title}
-          </h1>
+          <div className="flex items-end justify-between gap-6">
+            <h1 className="font-display text-5xl font-bold tracking-tighter text-primary-600 sm:text-7xl">
+              {company.title}
+            </h1>
+            {company.logo && (
+              <img
+                src={company.logo}
+                alt={`${company.title} logo`}
+                className="size-16 flex-shrink-0 -translate-y-0.5 rounded-xl object-cover shadow sm:size-24"
+              />
+            )}
+          </div>
 
           {/* Summary */}
           <p className="mt-6 font-display text-2xl font-bold tracking-tight text-primary-700">
@@ -73,13 +82,11 @@ export default async function CompanyPage({ params }: Props) {
             </div>
             {company.founded && (
               <div>
-                <span className="font-semibold">Founded:</span>{' '}
+                <span className="font-semibold">
+                  {company.ended ? 'Operated' : 'Founded'}:
+                </span>{' '}
                 {company.founded}
-              </div>
-            )}
-            {company.ended && (
-              <div>
-                <span className="font-semibold">Ended:</span> {company.ended}
+                {company.ended && `–${company.ended}`}
               </div>
             )}
             {company.location && (

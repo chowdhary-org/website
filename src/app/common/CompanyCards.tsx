@@ -10,6 +10,13 @@ function CompanyCard({ company }: { company: Company }) {
   return (
     <>
       <div className="flex items-center gap-4">
+        {company.logo && (
+          <img
+            src={company.logo}
+            alt={`${company.title} logo`}
+            className="size-8 -translate-y-0.5 rounded-lg object-cover shadow"
+          />
+        )}
         <h3 className="text-2xl font-semibold leading-tight tracking-tight text-primary-900">
           <Link
             href={`/holdings/portfolio/${company.slug}`}
@@ -18,16 +25,8 @@ function CompanyCard({ company }: { company: Company }) {
             {company.title}
           </Link>
         </h3>
-        <div
-          className={clsx(
-            'rounded-full bg-primary-200 px-3 py-1 text-sm font-bold uppercase leading-tight text-primary-800',
-            company.label === 'Inactive' && 'opacity-50',
-          )}
-        >
-          {company.label}
-        </div>
       </div>
-      <p className="mt-1.5 text-base tracking-tight text-primary-900">
+      <p className="mt-1.5 text-base tracking-tight text-primary-900/80">
         {company.summary}
       </p>
       {(company.founders?.length || isYCombinator) && (
