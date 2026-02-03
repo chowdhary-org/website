@@ -1,113 +1,6 @@
-'use client'
-
+import { CompanyCards } from '@/app/common/CompanyCards'
 import { Container } from '@/app/common/Container'
 import { BackgroundImage } from '@/app/holdings/components/BackgroundImage'
-import clsx from 'clsx'
-
-interface Day {
-  title: string
-  label: string
-  href?: string
-  summary: string
-}
-
-const projects: Array<Day> = [
-  {
-    title: 'FirstQuadrant',
-    label: 'Active',
-    href: 'https://firstquadrant.ai',
-    summary:
-      'All-in-one AI sales platform for scalable and autonomous B2B sales (YC S21).',
-  },
-  {
-    title: 'Langbase',
-    label: 'Active',
-    href: 'https://langbase.com',
-    summary:
-      'Composable AI developer platform to ship AI features in minutes, not months.',
-  },
-  {
-    title: 'Paleon',
-    label: 'Active',
-    href: 'https://www.paleon.io',
-    summary:
-      'AI-powered automated dispute resolution for social commerce.',
-  },
-  {
-    title: 'AI video platform',
-    label: 'Stealth',
-    summary:
-      'Generative AI platform for dynamic videos using no-code tool and API.',
-  },
-  {
-    title: 'Pabio',
-    label: 'Inactive',
-    summary:
-      'Rent-to-own furniture with personalized interior design in Europe (2020–2022).',
-  },
-  {
-    title: 'Oswald Labs',
-    label: 'Inactive',
-    summary:
-      'Accessibility technology company for the next billion users (2016–2020).',
-  },
-  {
-    title: 'Ara',
-    label: 'Inactive',
-    summary: 'AI assistant for scheduling meetings over email (2019–2020).',
-  },
-]
-
-function DaySummary({ day }: { day: Day }) {
-  return (
-    <>
-      <div className="flex items-center gap-4">
-        <h3 className="text-2xl font-semibold leading-tight tracking-tight text-primary-900">
-          {day.href ? (
-            <a
-              href={day.href}
-              target="_blank"
-              rel="noopener"
-              className="parent-relative-full-link"
-            >
-              {day.title}
-            </a>
-          ) : (
-            day.title
-          )}
-        </h3>
-        <div
-          className={clsx(
-            'rounded-full bg-primary-200 px-3 py-1 text-sm font-bold uppercase leading-tight text-primary-800',
-            day.label === 'Inactive' && 'opacity-50',
-          )}
-        >
-          {day.label}
-        </div>
-      </div>
-      <p className="mt-1.5 text-base tracking-tight text-primary-900">
-        {day.summary}
-      </p>
-    </>
-  )
-}
-
-function ScheduleStatic() {
-  return (
-    <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-      {projects.map((day) => (
-        <section
-          key={day.title}
-          className="relative rounded-b-lg bg-white/60 shadow-xl shadow-primary-900/5 backdrop-blur transition-shadow duration-200 ease-in-out hover:shadow-primary-900/10"
-        >
-          <div className="space-y-6 px-10 py-10">
-            <DaySummary day={day} />
-          </div>
-        </section>
-      ))}
-    </div>
-  )
-}
 
 export function Projects() {
   return (
@@ -143,7 +36,7 @@ export function Projects() {
           className="-bottom-32 -top-40 text-primary-300"
         />
         <Container className="relative">
-          <ScheduleStatic />
+          <CompanyCards />
         </Container>
       </div>
     </section>
