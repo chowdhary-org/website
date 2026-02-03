@@ -4,6 +4,7 @@ import { Button } from '@/app/holdings/components/Button'
 import {
   getAllCompanySlugs,
   getCompanyBySlug,
+  type Company,
 } from '@/app/holdings/data/companies'
 import { IconArrowLeft, IconExternalLink } from '@tabler/icons-react'
 import type { Metadata } from 'next'
@@ -12,6 +13,51 @@ import { notFound } from 'next/navigation'
 
 interface Props {
   params: Promise<{ slug: string }>
+}
+
+function generateOrganizationSchema(company: Company) {
+  const schema: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: company.title,
+    description: Array.isArray(company.description)
+      ? company.description.join(' ')
+      : company.description,
+  }
+
+  if (company.href) {
+    schema.url = company.href
+  }
+
+  if (company.logo) {
+    schema.logo = `https://chowdhary.co${company.logo}`
+  }
+
+  if (company.founded) {
+    schema.foundingDate = company.founded
+  }
+
+  if (company.ended) {
+    schema.dissolutionDate = company.ended
+  }
+
+  if (company.location) {
+    schema.location = {
+      '@type': 'Place',
+      name: company.location,
+    }
+  }
+
+  if (company.founders && company.founders.length > 0) {
+    schema.founder = company.founders.map((founder) => ({
+      '@type': 'Person',
+      name: founder.name,
+      ...(founder.linkedin && { sameAs: founder.linkedin }),
+      ...(founder.avatar && { image: `https://chowdhary.co${founder.avatar}` }),
+    }))
+  }
+
+  return schema
 }
 
 export async function generateStaticParams() {
@@ -42,11 +88,24 @@ export default async function CompanyPage({ params }: Props) {
     notFound()
   }
 
+  const organizationSchema = generateOrganizationSchema(company)
+
   return (
-    <div className="relative py-20 sm:pb-24 sm:pt-36">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationSchema),
+        }}
+      />
+      <div className="relative py-20 sm:pb-24 sm:pt-36">
       <BackgroundImage className="-bottom-14 -top-36 text-primary-300" />
       <Container className="relative">
-        <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
+        <article
+          className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12"
+          itemScope
+          itemType="https://schema.org/Organization"
+        >
           {/* Back link */}
           <Link
             href="/portfolio"
@@ -56,9 +115,21 @@ export default async function CompanyPage({ params }: Props) {
             Portfolio
           </Link>
 
+          {/* Hidden meta properties */}
+          {company.href && <meta itemProp="url" content={company.href} />}
+          {company.founded && (
+            <meta itemProp="foundingDate" content={company.founded} />
+          )}
+          {company.ended && (
+            <meta itemProp="dissolutionDate" content={company.ended} />
+          )}
+
           {/* Header */}
           <div className="flex items-end justify-between gap-6">
-            <h1 className="font-display text-5xl font-bold tracking-tighter text-primary-600 sm:text-7xl">
+            <h1
+              className="font-display text-5xl font-bold tracking-tighter text-primary-600 sm:text-7xl"
+              itemProp="name"
+            >
               {company.title}
             </h1>
             {company.logo && (
@@ -66,12 +137,16 @@ export default async function CompanyPage({ params }: Props) {
                 src={company.logo}
                 alt={`${company.title} logo`}
                 className="size-16 flex-shrink-0 -translate-y-0.5 rounded-xl object-cover shadow sm:size-24"
+                itemProp="logo"
               />
             )}
           </div>
 
           {/* Summary */}
-          <p className="mt-6 font-display text-2xl font-bold leading-tight tracking-tight text-primary-700">
+          <p
+            className="mt-6 font-display text-2xl font-bold leading-tight tracking-tight text-primary-700"
+            itemProp="description"
+          >
             {company.summary}
           </p>
 
@@ -90,9 +165,13 @@ export default async function CompanyPage({ params }: Props) {
               </div>
             )}
             {company.location && (
-              <div>
+              <div
+                itemProp="location"
+                itemScope
+                itemType="https://schema.org/Place"
+              >
                 <span className="font-semibold">Location:</span>{' '}
-                {company.location}
+                <span itemProp="name">{company.location}</span>
               </div>
             )}
           </div>
@@ -119,16 +198,26 @@ export default async function CompanyPage({ params }: Props) {
               </h2>
               <div className="mt-4 flex flex-wrap gap-x-8 gap-y-4">
                 {company.founders.map((founder) => (
-                  <div key={founder.name} className="flex items-center gap-3">
+                  <div
+                    key={founder.name}
+                    className="flex items-center gap-3"
+                    itemProp="founder"
+                    itemScope
+                    itemType="https://schema.org/Person"
+                  >
                     {founder.avatar && (
                       <img
                         src={founder.avatar}
                         alt={founder.name}
                         className="h-12 w-12 rounded-full object-cover"
+                        itemProp="image"
                       />
                     )}
                     <div>
-                      <div className="font-semibold text-primary-900">
+                      <div
+                        className="font-semibold text-primary-900"
+                        itemProp="name"
+                      >
                         {founder.name}
                       </div>
                       {founder.linkedin && (
@@ -137,6 +226,7 @@ export default async function CompanyPage({ params }: Props) {
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-sm text-primary-600 hover:text-primary-800"
+                          itemProp="sameAs"
                         >
                           LinkedIn
                         </a>
@@ -172,8 +262,9 @@ export default async function CompanyPage({ params }: Props) {
               </Button>
             </div>
           )}
-        </div>
+        </article>
       </Container>
     </div>
+    </>
   )
 }

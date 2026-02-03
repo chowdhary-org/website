@@ -107,16 +107,20 @@ function CompanyCard({ company }: { company: Company }) {
   }
 
   return (
-    <>
+    <div itemScope itemType="https://schema.org/Organization">
       <div className="flex items-center gap-4">
         {company.logo && (
           <img
             src={company.logo}
             alt={`${company.title} logo`}
             className="size-8 -translate-y-0.5 rounded-lg object-cover shadow"
+            itemProp="logo"
           />
         )}
-        <h3 className="text-2xl font-semibold leading-tight tracking-tight text-primary-900">
+        <h3
+          className="text-2xl font-semibold leading-tight tracking-tight text-primary-900"
+          itemProp="name"
+        >
           <Link
             href={`/portfolio/${company.slug}`}
             className="parent-relative-full-link"
@@ -125,22 +129,37 @@ function CompanyCard({ company }: { company: Company }) {
           </Link>
         </h3>
       </div>
-      <p className="mt-1.5 text-base tracking-tight text-primary-900/80">
+      <p
+        className="mt-1.5 text-base tracking-tight text-primary-900/80"
+        itemProp="description"
+      >
         {company.summary}
       </p>
+      {company.href && <link itemProp="url" href={company.href} />}
+      {company.founded && (
+        <meta itemProp="foundingDate" content={company.founded} />
+      )}
       {(company.founders?.length || ycTag) && (
         <div className="mt-4 flex items-center justify-between gap-4">
           {company.founders && company.founders.length > 0 ? (
             <div className="flex -space-x-2">
               {company.founders.map((founder) =>
                 founder.avatar ? (
-                  <img
+                  <span
                     key={founder.name}
-                    src={founder.avatar}
-                    alt={founder.name}
-                    title={founder.name}
-                    className="h-8 w-8 rounded-full border-2 border-white object-cover"
-                  />
+                    itemProp="founder"
+                    itemScope
+                    itemType="https://schema.org/Person"
+                  >
+                    <img
+                      src={founder.avatar}
+                      alt={founder.name}
+                      title={founder.name}
+                      className="h-8 w-8 rounded-full border-2 border-white object-cover"
+                      itemProp="image"
+                    />
+                    <meta itemProp="name" content={founder.name} />
+                  </span>
                 ) : null,
               )}
             </div>
@@ -161,7 +180,7 @@ function CompanyCard({ company }: { company: Company }) {
           )}
         </div>
       )}
-    </>
+    </div>
   )
 }
 
@@ -170,19 +189,42 @@ interface CompanyCardsProps {
 }
 
 export function CompanyCards({ columns = 3 }: CompanyCardsProps) {
+  const nonStealthCompanies = companies.filter((c) => !c.stealth)
+
   return (
     <div
       className={clsx(
         'grid gap-8',
         columns === 1 ? 'grid-cols-1' : 'grid-cols-1 lg:grid-cols-3',
       )}
+      itemScope
+      itemType="https://schema.org/ItemList"
     >
-      {companies.map((company) => (
+      <meta
+        itemProp="numberOfItems"
+        content={String(nonStealthCompanies.length)}
+      />
+      {companies.map((company, index) => (
         <section
           key={company.slug}
           className="relative rounded-b-lg bg-white/60 shadow-xl shadow-primary-900/5 backdrop-blur transition-shadow duration-200 ease-in-out hover:shadow-primary-900/10"
+          itemProp={!company.stealth ? 'itemListElement' : undefined}
+          itemScope={!company.stealth ? true : undefined}
+          itemType={!company.stealth ? 'https://schema.org/ListItem' : undefined}
         >
-          <div className="space-y-6 px-10 py-10">
+          {!company.stealth && (
+            <meta
+              itemProp="position"
+              content={String(
+                nonStealthCompanies.findIndex((c) => c.slug === company.slug) +
+                  1,
+              )}
+            />
+          )}
+          <div
+            className="space-y-6 px-10 py-10"
+            itemProp={!company.stealth ? 'item' : undefined}
+          >
             <CompanyCard company={company} />
           </div>
         </section>
