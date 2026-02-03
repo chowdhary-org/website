@@ -17,6 +17,8 @@ export interface Company {
   location?: string
   tags?: string[]
   founders?: Founder[]
+  stealth?: boolean
+  stealthCategory?: string
 }
 
 export const companies: Company[] = [
@@ -49,12 +51,22 @@ export const companies: Company[] = [
     ],
   },
   {
+    slug: 'stealth-llm-observability',
+    title: 'LLM observability company',
+    label: 'Stealth',
+    stealth: true,
+    stealthCategory: 'LLM observability company',
+    summary: 'Full-stack monitoring and debugging platform for AI applications',
+    description: '',
+    tags: ['AI', 'Developer Tools', 'Y Combinator'],
+  },
+  {
     slug: 'firstquadrant',
     title: 'FirstQuadrant',
     label: 'Exited',
     href: 'https://firstquadrant.ai',
     logo: '/avatars/firstquadrant.jpg',
-    summary: 'AI sales platform for B2B teams with human-in-the-loop.',
+    summary: 'AI sales platform for B2B teams with human-in-the-loop',
     description: [
       'FirstQuadrant is an AI sales execution platform that helps founders and revenue teams move faster, stay organized, and close more deals by streamlining behind-the-scenes sales work. The platform encompasses a complete suite of AI tools organized around three pillars: Grow for top-of-funnel expansion through personalized email campaigns, Convert for pipeline management and deal optimization, and Nurture for relationship management and reactivation of inactive prospects.',
       'The platform features advanced AI reasoning to keep deals moving—understanding context, thinking ahead, and supporting reps with the right next steps. Key capabilities include AI Conversations, AI Actions, AI Enrichment, and AI Campaigns, enabling teams to convert more deals, nurture inactive relationships, and grow their pipeline. In June 2024, FirstQuadrant acquired Flike, another AI-powered sales tool, to expand its capabilities.',
@@ -78,12 +90,22 @@ export const companies: Company[] = [
     ],
   },
   {
+    slug: 'stealth-enterprise-intelligence',
+    title: 'Enterprise intelligence company',
+    label: 'Stealth',
+    stealth: true,
+    stealthCategory: 'Enterprise intelligence company',
+    summary:
+      'Agentic AI platform for processing and understanding unstructured data',
+    description: '',
+  },
+  {
     slug: 'langbase',
     title: 'Langbase',
     label: 'Active',
     href: 'https://langbase.com',
     logo: '/avatars/langbase.jpg',
-    summary: 'The most powerful serverless platform for building AI agents.',
+    summary: 'The most powerful serverless platform for building AI agents',
     description: [
       'Langbase is building the best AI engineering developer experience for developers. The platform has helped over 100,000 developers from more than 5,000 companies build reliable and infinitely scalable composable AI agents—from prototypes to production without managing a single container.',
       'The serverless platform processes 700+ TB of vector memory and billions of AI agent runs every month. Langbase provides powerful AI primitives including Pipe Agents for building serverless AI agents with tools and memory, AI Memory for automatic RAG with long-term memory, Workflows for multi-step durable agents, and Threads for managing conversation history. With push-to-deploy workflows and architecture designed for real scale, Langbase lets teams ship AI products faster. The platform also launched Command.new, enabling developers to turn prompts into production-ready agents.',
@@ -138,7 +160,7 @@ export const companies: Company[] = [
     label: 'Inactive',
     logo: '/avatars/pabio.jpg',
     summary:
-      'Rent-to-own furniture with personalized interior design in Europe.',
+      'Rent-to-own furniture with personalized interior design in Europe',
     description: [
       'Pabio is a rent-to-own furniture startup that combines personalized interior design with flexible furniture subscriptions, with a mission to democratize beautiful living. Customers upload their apartment floor plan and photos, and professional interior designers create personalized proposals with photorealistic 3D renders showing how their fully furnished apartment will look. With no upfront costs, customers could rent furniture valued at approximately $20,000 with delivery and installation within 3 weeks.',
       'Furniture is delivered, assembled, and fully insured for a monthly subscription fee—typically under €200 for a one-bedroom apartment. Monthly payments go toward ownership, allowing customers to buy individual pieces or continue renting indefinitely. The sustainable model retrieves furniture when customers move out, refurbishes it, and places it in new apartments at discounted prices.',
@@ -230,5 +252,7 @@ export function getCompanyBySlug(slug: string): Company | undefined {
 }
 
 export function getAllCompanySlugs(): string[] {
-  return companies.map((company) => company.slug)
+  return companies
+    .filter((company) => !company.stealth)
+    .map((company) => company.slug)
 }
