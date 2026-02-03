@@ -18,11 +18,10 @@ export function Hero() {
             </p>
             <p>
               At Chowdhary.co, we believe that technology will solve all
-              problems. We are dedicated to investing in pioneering solutions
-              and nurturing a dynamic community of innovators dedicated to
-              creating meaningful change. We support early-stage startups with
-              audacious visions for transformation, host events centered around
-              community engagement, and encourage open-source partnerships.
+              problems. We invest at pre-seed and seed in technical founders
+              building AI, developer tools, and infrastructure—often before
+              product-market fit—and support them with hands-on operational
+              experience from building and scaling startups ourselves.
             </p>
           </div>
           <div className="mt-10 flex items-center justify-center sm:hidden">

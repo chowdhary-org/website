@@ -27,9 +27,9 @@ export function Newsletter() {
                 Apply for a grant
               </p>
               <p className="mt-4 text-lg tracking-tight text-primary-900">
-                We’re looking for projects that are making a positive impact on
-                the world. If that sounds like you, please apply and we’ll be in
-                touch if it’s a good fit.
+                We fund hackathons, developer meetups, open-source projects, and
+                community initiatives—especially those serving underrepresented
+                groups.
               </p>
             </div>
             <form

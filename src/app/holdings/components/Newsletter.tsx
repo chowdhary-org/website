@@ -27,9 +27,9 @@ export function Newsletter() {
                 Apply for an investment
               </p>
               <p className="mt-4 text-lg tracking-tight text-primary-900">
-                We’re looking for projects that are accelerating the progress of
-                humanity through technological change. If that sounds like you,
-                please apply and we’ll be in touch if it’s a good fit.
+                We invest at pre-seed and seed in AI, developer tools, and
+                infrastructure. We look for technical founders with strong
+                conviction about what they're building.
               </p>
             </div>
             <form

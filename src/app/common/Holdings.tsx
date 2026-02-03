@@ -10,20 +10,17 @@ export function Holdings({ externalLink }: { externalLink?: boolean }) {
             Chowdhary.co
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-primary-900">
-            At Chowdhary.co, we bring bold ideas to life. This dynamic platform
-            is dedicated to identifying, investing in, and nurturing early-stage
-            startups that are poised to revolutionize the way we address global
-            challenges. We believe in the power of entrepreneurial spirit
-            combined with technological innovation to create impactful
-            solutions.
+            Chowdhary.co invests in technical founders at the pre-seed and seed
+            stage. We focus on AI, developer tools, and infrastructure—companies
+            where deep technical execution is the competitive advantage.
           </p>
           <p className="mt-4 font-display text-lg tracking-tight text-primary-900">
             <strong>Chowdhary Holdings B.V.</strong> is Anand Chowdhary&rsquo;s
-            holding company, but it isn&rsquo;t just about funding; it&rsquo;s
-            about building partnerships that foster growth, drive change, and
-            set new benchmarks in the tech world. Join us as we embark on this
-            journey to transform visionary ideas into realities that can reshape
-            our world.
+            holding company and early-stage fund. We write first checks into
+            companies before product-market fit and work closely with founders
+            on product, hiring, and go-to-market. Our portfolio includes Y
+            Combinator companies and founders who've gone on to raise from top
+            funds.
           </p>
           <div className="ml-12 mt-8">
             {externalLink ? (

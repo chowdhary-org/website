@@ -13,16 +13,15 @@ export function Hero() {
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-primary-900">
             <p className="text-3xl font-bold text-primary-700">
-              We are a nonprofit harnessing the power of technology to open
-              doors to a better future.
+              We fund community projects and open-source initiatives that expand
+              access to opportunity.
             </p>
             <p>
-              At Chowdhary.org, we invest in groundbreaking solutions and foster
-              a vibrant community of innovators committed to making a tangible
-              difference. By supporting early-stage startups with bold visions
-              for change, organizing community-centric events, and fostering
-              open-source collaborations, we are building a global movement that
-              champions technological advancement with a heart.
+              Chowdhary.org provides grants to hackathons, developer events, and
+              impact-focused projects—especially those serving underrepresented
+              communities. We've helped distribute emergency relief during
+              COVID-19, organized India's first civic hackathon, and continue to
+              support builders who are solving real problems for real people.
             </p>
           </div>
           <div className="mt-10 flex items-center justify-center sm:hidden">

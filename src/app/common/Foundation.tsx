@@ -10,19 +10,17 @@ export function Foundation({ externalLink }: { externalLink?: boolean }) {
             Chowdhary.org
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-primary-900">
-            At the heart of Chowdhary.org&rsquo;s Foundation lies a resolute
-            commitment to leveraging technology for the greater good. Our
-            Foundation is the cornerstone of our mission, where we focus on
-            nurturing and supporting a wide array of initiatives that make a
-            tangible difference.
+            The Chowdhary.org Foundation provides grants to community-driven
+            projects that use technology to expand access and opportunity. We
+            focus on initiatives that might not attract traditional funding but
+            can create outsized impact.
           </p>
           <p className="mt-4 font-display text-lg tracking-tight text-primary-900">
-            From empowering communities with digital education to funding
-            research for sustainable tech solutions, our Foundation operates at
-            the intersection of innovation and social responsibility. Here,
-            every project we undertake is more than just an investment in
-            technology; it&rsquo;s an investment in hope, progress, and a better
-            future for all.
+            We sponsor developer events, hackathons, and open-source projects.
+            We've supported emergency relief efforts, civic technology
+            initiatives, and platforms that celebrate local entrepreneurship.
+            If you're building something that helps people—and need support to
+            make it happen—we want to hear from you.
           </p>
           <div className="ml-12 mt-8">
             {externalLink ? (

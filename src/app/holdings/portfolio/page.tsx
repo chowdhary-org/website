@@ -12,8 +12,8 @@ export default function PortfolioPage() {
             Portfolio
           </h1>
           <p className="mt-6 font-display text-2xl tracking-tight text-primary-900">
-            We invest in pioneering technology companies that are building the
-            future.
+            Pre-seed and seed investments in AI, developer tools, and
+            infrastructure companies.
           </p>
           <div className="mt-14 sm:mt-24">
             <CompanyCards columns={1} />

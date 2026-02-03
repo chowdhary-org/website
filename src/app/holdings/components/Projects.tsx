@@ -8,7 +8,7 @@ export function Projects() {
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <blockquote className="font-display text-4xl font-bold tracking-tighter text-primary-600 sm:text-5xl">
-            &ldquo;Through technological process and acceleration, we invest in
+            &ldquo;Through technological progress and acceleration, we invest in
             more than advancements; we invest in the future prosperity of
             humanity itself.&rdquo;
           </blockquote>
