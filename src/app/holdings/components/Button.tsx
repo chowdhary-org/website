@@ -21,7 +21,7 @@ export function Button({ className, children, ...props }: ButtonProps) {
     </div>
   ) : (
     <div className="relative">
-      <Link href={props.href} className={className}>
+      <Link {...props} className={className}>
         <ButtonLeft className="absolute left-px top-0 h-full -translate-x-full text-primary-600 group-hover:text-primary-500" />
         {children}
         <ButtonLeft className="absolute right-px top-0 h-full translate-x-full rotate-180 text-primary-600 group-hover:text-primary-500" />

@@ -5,6 +5,8 @@ import clsx from 'clsx'
 import Link from 'next/link'
 
 function CompanyCard({ company }: { company: Company }) {
+  const isYCombinator = company.tags?.includes('Y Combinator')
+
   return (
     <>
       <div className="flex items-center gap-4">
@@ -28,6 +30,39 @@ function CompanyCard({ company }: { company: Company }) {
       <p className="mt-1.5 text-base tracking-tight text-primary-900">
         {company.summary}
       </p>
+      {(company.founders?.length || isYCombinator) && (
+        <div className="mt-4 flex items-center justify-between gap-4">
+          {company.founders && company.founders.length > 0 ? (
+            <div className="flex -space-x-2">
+              {company.founders.map((founder) =>
+                founder.avatar ? (
+                  <img
+                    key={founder.name}
+                    src={founder.avatar}
+                    alt={founder.name}
+                    title={founder.name}
+                    className="h-8 w-8 rounded-full border-2 border-white object-cover"
+                  />
+                ) : null,
+              )}
+            </div>
+          ) : (
+            <div />
+          )}
+          {isYCombinator && (
+            <div className="flex items-center gap-2">
+              <img
+                src="https://www.ycombinator.com/favicon.ico"
+                alt="Y Combinator"
+                className="size-5 -translate-y-0.5 rounded-sm"
+              />
+              <span className="text-sm font-medium text-primary-700">
+                Y Combinator
+              </span>
+            </div>
+          )}
+        </div>
+      )}
     </>
   )
 }

@@ -53,7 +53,7 @@ export default async function CompanyPage({ params }: Props) {
             className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-primary-600 transition-colors hover:text-primary-800"
           >
             <IconArrowLeft className="h-4 w-4" />
-            Back to portfolio
+            Portfolio
           </Link>
 
           {/* Header */}
@@ -99,9 +99,54 @@ export default async function CompanyPage({ params }: Props) {
             </div>
           )}
 
+          {/* Founders */}
+          {company.founders && company.founders.length > 0 && (
+            <div className="mt-8">
+              <h2 className="text-sm font-semibold uppercase tracking-wide text-primary-600">
+                {company.founders.length === 1 ? 'Founder' : 'Founders'}
+              </h2>
+              <div className="mt-4 flex flex-wrap gap-8">
+                {company.founders.map((founder) => (
+                  <div key={founder.name} className="flex items-center gap-3">
+                    {founder.avatar && (
+                      <img
+                        src={founder.avatar}
+                        alt={founder.name}
+                        className="h-12 w-12 rounded-full object-cover"
+                      />
+                    )}
+                    <div>
+                      <div className="font-semibold text-primary-900">
+                        {founder.name}
+                      </div>
+                      {founder.twitter && (
+                        <a
+                          href={founder.twitter}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-primary-600 hover:text-primary-800"
+                        >
+                          @{founder.twitter.split('/').pop()}
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Description */}
-          <div className="mt-10 space-y-6 font-display text-xl tracking-tight text-primary-900">
-            <p>{company.description}</p>
+          <div className="mt-10 space-y-6 font-display tracking-tight text-primary-900">
+            {Array.isArray(company.description) ? (
+              company.description.map((paragraph, index) => (
+                <p key={index} className={index === 0 ? 'text-xl' : 'text-lg'}>
+                  {paragraph}
+                </p>
+              ))
+            ) : (
+              <p className="text-xl">{company.description}</p>
+            )}
           </div>
 
           {/* CTA Button */}
