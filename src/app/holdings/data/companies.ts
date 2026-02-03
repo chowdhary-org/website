@@ -1,7 +1,7 @@
 export interface Founder {
   name: string
   avatar?: string
-  twitter?: string
+  linkedin?: string
 }
 
 export interface Company {
@@ -12,6 +12,7 @@ export interface Company {
   summary: string
   description: string | string[]
   founded?: string
+  ended?: string
   location?: string
   tags?: string[]
   founders?: Founder[]
@@ -30,18 +31,19 @@ export const companies: Company[] = [
       'Backed by Y Combinator (S21) and recognized as #1 Product of the Day on Product Hunt, FirstQuadrant is used by the fastest-growing YC startups. In 2025, the company completed a confidential agreement with a leading AI technology company that recognized long-term strategic value in components of the FirstQuadrant platform and data infrastructure.',
     ],
     founded: '2021',
+    ended: '2025',
     location: 'San Francisco, CA',
     tags: ['AI', 'Sales', 'B2B', 'Y Combinator'],
     founders: [
       {
         name: 'Carlo Badini',
-        avatar: 'https://unavatar.io/twitter/carlobadini',
-        twitter: 'https://twitter.com/carlobadini',
+        avatar: '/holdings/avatars/carlo-badini.jpg',
+        linkedin: 'https://www.linkedin.com/in/carlobadini/',
       },
       {
         name: 'Anand Chowdhary',
-        avatar: 'https://unavatar.io/twitter/AnandChowdhary',
-        twitter: 'https://twitter.com/AnandChowdhary',
+        avatar: '/holdings/avatars/anand-chowdhary.jpg',
+        linkedin: 'https://www.linkedin.com/in/anandchowdhary/',
       },
     ],
   },
@@ -62,8 +64,8 @@ export const companies: Company[] = [
     founders: [
       {
         name: 'Ahmad Awais',
-        avatar: 'https://unavatar.io/twitter/MrAhmadAwais',
-        twitter: 'https://twitter.com/MrAhmadAwais',
+        avatar: '/holdings/avatars/ahmad-awais.jpg',
+        linkedin: 'https://www.linkedin.com/in/MrAhmadAwais/',
       },
     ],
   },
@@ -72,45 +74,119 @@ export const companies: Company[] = [
     title: 'Paleon',
     label: 'Active',
     href: 'https://www.paleon.io',
-    summary: 'AI-powered automated dispute resolution for social commerce.',
-    description:
-      'Paleon leverages artificial intelligence to automate dispute resolution in the social commerce ecosystem. As social commerce continues to grow, the need for efficient and fair dispute resolution becomes critical. Paleon provides a seamless solution that helps both buyers and sellers resolve conflicts quickly and equitably.',
+    summary: 'Know which creators will sell before you pay them.',
+    description: [
+      'Paleon analyzes thousands of TikTok Shop videos to identify the exact formats, scripts, and hooks that drive sales. The platform helps brands brief creators with data, pay flat fees with confidence, and scale from 10 to 200+ engaged creators in 6 months.',
+      'The AI-powered platform automatically transcribes videos, analyzes tones, extracts comments, and identifies winning patterns to create a unique brand map. This transforms creator partnerships from expensive gambles into predictable revenue engines.',
+      'By providing data-driven insights, Paleon breaks the traditional creator churn cycle. Brands can confidently pay per-post incentives, creators stay engaged and post consistently, and top performers become mentors who recruit and train new creators—creating a self-perpetuating growth engine.',
+    ],
     founded: '2023',
-    tags: ['AI', 'E-commerce', 'Social Commerce'],
+    tags: ['AI', 'E-commerce', 'TikTok Shop', 'Creator Economy'],
+    founders: [
+      {
+        name: 'Jelmer Hilhorst',
+        avatar: '/holdings/avatars/jelmer-hilhorst.jpg',
+        linkedin: 'https://www.linkedin.com/in/jelmerhilhorst/',
+      },
+      {
+        name: 'Sam van Roosmalen',
+        avatar: '/holdings/avatars/sam-van-roosmalen.jpg',
+        linkedin: 'https://www.linkedin.com/in/sam-van-roosmalen-59bb1a241/',
+      },
+      {
+        name: 'Thijmen Kammeijer',
+        avatar: '/holdings/avatars/thijmen-kammeijer.jpg',
+        linkedin: 'https://www.linkedin.com/in/thijmenkammeijer/',
+      },
+    ],
   },
   {
     slug: 'pabio',
     title: 'Pabio',
     label: 'Inactive',
     summary:
-      'Rent-to-own furniture with personalized interior design in Europe (2020–2022).',
-    description:
-      'Pabio is a pioneering rent-to-own furniture company that offers personalized interior design services across Europe. The company combines the flexibility of furniture rental with the option to own, making quality furniture accessible to more people. Pabio also provides personalized interior design consultations to help customers create their ideal living spaces.',
+      'Rent-to-own furniture with personalized interior design in Europe.',
+    description: [
+      'Pabio is a rent-to-own furniture startup that combines personalized interior design with flexible furniture subscriptions. Customers upload their apartment floor plan and photos, and professional interior designers create personalized proposals with photorealistic 3D renders showing how their fully furnished apartment will look.',
+      'Furniture is delivered, assembled, and fully insured for a monthly subscription fee—typically under €200 for a one-bedroom apartment. Monthly payments go toward ownership, allowing customers to buy furniture at the end of their subscription. The sustainable model retrieves furniture when customers move out, refurbishes it, and places it in new apartments at discounted prices.',
+      'Backed by Y Combinator and investors including Serpentine Ventures, Session.VC, Tomahawk.VC, and Pioneer Fund, Pabio raised $2.2 million in seed funding. The company started in Switzerland and expanded to Berlin, Germany in December 2021.',
+    ],
     founded: '2020',
-    location: 'Europe',
-    tags: ['Furniture', 'Interior Design', 'Rent-to-Own'],
+    ended: '2022',
+    location: 'Zurich, Switzerland',
+    tags: ['Furniture', 'Interior Design', 'Rent-to-Own', 'Y Combinator'],
+    founders: [
+      {
+        name: 'Carlo Badini',
+        avatar: '/holdings/avatars/carlo-badini.jpg',
+        linkedin: 'https://www.linkedin.com/in/carlobadini/',
+      },
+      {
+        name: 'Anand Chowdhary',
+        avatar: '/holdings/avatars/anand-chowdhary.jpg',
+        linkedin: 'https://www.linkedin.com/in/anandchowdhary/',
+      },
+    ],
   },
   {
     slug: 'oswald-labs',
     title: 'Oswald Labs',
     label: 'Inactive',
-    summary:
-      'Accessibility technology company for the next billion users (2016–2020).',
-    description:
-      'Oswald Labs is an accessibility technology company dedicated to building products for the next billion users. The company develops innovative solutions to make the web and digital products accessible to people with disabilities, including dyslexia, visual impairments, and other conditions. Oswald Labs makes significant contributions to web accessibility.',
+    summary: 'Accessibility technology company for the next billion users.',
+    description: [
+      'Oswald Labs is an award-winning accessibility technology company that builds products for people with disabilities. The company offers several flagship products including Agastya, a web accessibility solution that adds disability-friendly features to websites with a single line of JavaScript code.',
+      "Other products include Shravan, the world's first end-to-end accessible smartphone platform with speech and vibration interfaces for visually impaired and elderly users; Valmiki, a browser extension providing dyslexia-friendly customization; and Augmenta11y, an AR app for children with dyslexia that reduces reading time by over 20%.",
+      'Founded on August 15, 2016, Oswald Labs has headquarters in New Delhi, India and operations in the Netherlands. The company also runs a free, remote accelerator program for early-stage startups building for underserved populations.',
+    ],
     founded: '2016',
-    location: 'Global',
+    ended: '2020',
+    location: 'New Delhi, India',
     tags: ['Accessibility', 'Technology', 'Web'],
+    founders: [
+      {
+        name: 'Anand Chowdhary',
+        avatar: '/holdings/avatars/anand-chowdhary.jpg',
+        linkedin: 'https://www.linkedin.com/in/anandchowdhary/',
+      },
+      {
+        name: 'Nishant Gadihoke',
+        avatar: '/holdings/avatars/nishant-gadihoke.jpg',
+        linkedin: 'https://www.linkedin.com/in/nishantgadihoke/',
+      },
+      {
+        name: 'Mahendra Singh Raghuwanshi',
+        avatar: '/holdings/avatars/mahendra-singh-raghuwanshi.png',
+        linkedin:
+          'https://www.linkedin.com/in/mahendra-singh-raghuwanshi-88297a7b/',
+      },
+    ],
   },
   {
     slug: 'ara',
     title: 'Ara',
     label: 'Inactive',
-    summary: 'AI assistant for scheduling meetings over email (2019–2020).',
-    description:
+    summary: 'AI assistant for scheduling meetings over email.',
+    description: [
       'Ara is an AI-powered assistant designed to handle meeting scheduling through email. By understanding natural language and calendar availability, Ara can autonomously coordinate meetings between multiple parties, saving time and reducing the back-and-forth typically involved in scheduling.',
+      "Ara was built in collaboration with Speakup, a Dutch telecommunications provider founded in 2003 by Florian Overkamp. The project combines Speakup's expertise in communication infrastructure with AI-powered natural language processing to create a seamless scheduling experience.",
+      'The assistant integrates with email and calendar systems to understand availability, propose meeting times, and confirm appointments—all through natural conversation. Ara handles the tedious coordination work so teams can focus on what matters.',
+    ],
     founded: '2019',
-    tags: ['AI', 'Productivity', 'Scheduling'],
+    ended: '2020',
+    location: 'Netherlands',
+    tags: ['AI', 'Productivity', 'Scheduling', 'Telecommunications'],
+    founders: [
+      {
+        name: 'Florian Overkamp',
+        avatar: '/holdings/avatars/florian-overkamp.jpg',
+        linkedin: 'https://www.linkedin.com/in/florianoverkamp/',
+      },
+      {
+        name: 'Anand Chowdhary',
+        avatar: '/holdings/avatars/anand-chowdhary.jpg',
+        linkedin: 'https://www.linkedin.com/in/anandchowdhary/',
+      },
+    ],
   },
 ]
 

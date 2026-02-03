@@ -67,7 +67,7 @@ export default async function CompanyPage({ params }: Props) {
           </p>
 
           {/* Meta info */}
-          <div className="mt-6 flex flex-wrap gap-6 text-base text-primary-900">
+          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-base text-primary-900">
             <div>
               <span className="font-semibold">Status:</span> {company.label}
             </div>
@@ -75,6 +75,11 @@ export default async function CompanyPage({ params }: Props) {
               <div>
                 <span className="font-semibold">Founded:</span>{' '}
                 {company.founded}
+              </div>
+            )}
+            {company.ended && (
+              <div>
+                <span className="font-semibold">Ended:</span> {company.ended}
               </div>
             )}
             {company.location && (
@@ -105,7 +110,7 @@ export default async function CompanyPage({ params }: Props) {
               <h2 className="text-sm font-semibold uppercase tracking-wide text-primary-600">
                 {company.founders.length === 1 ? 'Founder' : 'Founders'}
               </h2>
-              <div className="mt-4 flex flex-wrap gap-8">
+              <div className="mt-4 flex flex-wrap gap-x-8 gap-y-4">
                 {company.founders.map((founder) => (
                   <div key={founder.name} className="flex items-center gap-3">
                     {founder.avatar && (
@@ -119,14 +124,14 @@ export default async function CompanyPage({ params }: Props) {
                       <div className="font-semibold text-primary-900">
                         {founder.name}
                       </div>
-                      {founder.twitter && (
+                      {founder.linkedin && (
                         <a
-                          href={founder.twitter}
+                          href={founder.linkedin}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-sm text-primary-600 hover:text-primary-800"
                         >
-                          @{founder.twitter.split('/').pop()}
+                          LinkedIn
                         </a>
                       )}
                     </div>
