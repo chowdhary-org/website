@@ -118,7 +118,7 @@ function CompanyCard({ company }: { company: Company }) {
         )}
         <h3 className="text-2xl font-semibold leading-tight tracking-tight text-primary-900">
           <Link
-            href={`/holdings/portfolio/${company.slug}`}
+            href={`/portfolio/${company.slug}`}
             className="parent-relative-full-link"
           >
             {company.title}

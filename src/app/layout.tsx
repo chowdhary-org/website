@@ -18,7 +18,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={clsx('h-full bg-white antialiased', epilogue.variable)}
+      className={clsx(
+        'h-full scroll-smooth bg-white antialiased',
+        epilogue.variable,
+      )}
     >
       <body className="flex min-h-full">
         <div className="flex w-full flex-col">{children}</div>

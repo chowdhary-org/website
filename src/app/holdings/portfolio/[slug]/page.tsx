@@ -49,7 +49,7 @@ export default async function CompanyPage({ params }: Props) {
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
           {/* Back link */}
           <Link
-            href="/holdings/portfolio"
+            href="/portfolio"
             className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-primary-600 transition-colors hover:text-primary-800"
           >
             <IconArrowLeft className="h-4 w-4" />
