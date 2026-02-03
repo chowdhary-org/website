@@ -28,7 +28,7 @@ export function Foundation({ externalLink }: { externalLink?: boolean }) {
             {externalLink ? (
               <Button href="https://chowdhary.org">Visit Chowdhary.org</Button>
             ) : (
-              <Button href="#apply">Apply for a grant</Button>
+              <Button href="/#apply">Apply for a grant</Button>
             )}
           </div>
         </div>

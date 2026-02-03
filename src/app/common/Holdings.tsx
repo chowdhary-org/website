@@ -28,7 +28,7 @@ export function Holdings({ externalLink }: { externalLink?: boolean }) {
             {externalLink ? (
               <Button href="https://chowdhary.co">Visit Chowdhary.co</Button>
             ) : (
-              <Button href="#apply">Apply for an investment</Button>
+              <Button href="/#apply">Apply for an investment</Button>
             )}
           </div>
         </div>

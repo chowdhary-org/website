@@ -26,7 +26,7 @@ export function Hero() {
             </p>
           </div>
           <div className="mt-10 flex items-center justify-center sm:hidden">
-            <Button href="#apply">Apply for a grant</Button>
+            <Button href="/#apply">Apply for a grant</Button>
           </div>
         </div>
       </Container>

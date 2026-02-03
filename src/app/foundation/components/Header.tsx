@@ -41,7 +41,7 @@ export function Header() {
           </Link>
         </div>
         <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
-          <Button href="#apply">Apply for a grant</Button>
+          <Button href="/#apply">Apply for a grant</Button>
         </div>
       </Container>
     </header>
