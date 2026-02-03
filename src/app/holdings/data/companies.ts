@@ -25,7 +25,7 @@ export const companies: Company[] = [
     title: 'Airweave',
     label: 'Active',
     href: 'https://airweave.ai',
-    logo: '/holdings/avatars/airweave.jpg',
+    logo: '/avatars/airweave.jpg',
     summary: 'Open-source context retrieval layer for smarter AI agents',
     description: [
       'Airweave is an open-source AI infrastructure company that provides a context retrieval layer for AI agents. The platform enables AI agents and RAG pipelines to retrieve relevant context from multiple apps and databases in a single request, connecting to productivity tools like Google Drive, Slack, Notion, GitHub, and databases like Postgres to transform their contents into searchable, agent-ready knowledge bases.',
@@ -38,12 +38,12 @@ export const companies: Company[] = [
     founders: [
       {
         name: 'Lennert Jansen',
-        avatar: '/holdings/avatars/lennert-jansen.jpg',
+        avatar: '/avatars/lennert-jansen.jpg',
         linkedin: 'https://www.linkedin.com/in/lennertjansen/',
       },
       {
         name: 'Rauf Akdemir',
-        avatar: '/holdings/avatars/rauf-akdemir.jpg',
+        avatar: '/avatars/rauf-akdemir.jpg',
         linkedin: 'https://www.linkedin.com/in/orhan-rauf-akdemir/',
       },
     ],
@@ -53,7 +53,7 @@ export const companies: Company[] = [
     title: 'FirstQuadrant',
     label: 'Exited',
     href: 'https://firstquadrant.ai',
-    logo: '/holdings/avatars/firstquadrant.jpg',
+    logo: '/avatars/firstquadrant.jpg',
     summary: 'AI sales platform for B2B teams with human-in-the-loop.',
     description: [
       'FirstQuadrant is an AI sales execution platform that helps founders and revenue teams move faster, stay organized, and close more deals by streamlining behind-the-scenes sales work. The platform encompasses a complete suite of AI tools organized around three pillars: Grow for top-of-funnel expansion through personalized email campaigns, Convert for pipeline management and deal optimization, and Nurture for relationship management and reactivation of inactive prospects.',
@@ -67,12 +67,12 @@ export const companies: Company[] = [
     founders: [
       {
         name: 'Carlo Badini',
-        avatar: '/holdings/avatars/carlo-badini.jpg',
+        avatar: '/avatars/carlo-badini.jpg',
         linkedin: 'https://www.linkedin.com/in/carlobadini/',
       },
       {
         name: 'Anand Chowdhary',
-        avatar: '/holdings/avatars/anand-chowdhary.jpg',
+        avatar: '/avatars/anand-chowdhary.jpg',
         linkedin: 'https://www.linkedin.com/in/anandchowdhary/',
       },
     ],
@@ -82,7 +82,7 @@ export const companies: Company[] = [
     title: 'Langbase',
     label: 'Active',
     href: 'https://langbase.com',
-    logo: '/holdings/avatars/langbase.jpg',
+    logo: '/avatars/langbase.jpg',
     summary: 'The most powerful serverless platform for building AI agents.',
     description: [
       'Langbase is building the best AI engineering developer experience for developers. The platform has helped over 100,000 developers from more than 5,000 companies build reliable and infinitely scalable composable AI agents—from prototypes to production without managing a single container.',
@@ -95,7 +95,7 @@ export const companies: Company[] = [
     founders: [
       {
         name: 'Ahmad Awais',
-        avatar: '/holdings/avatars/ahmad-awais.jpg',
+        avatar: '/avatars/ahmad-awais.jpg',
         linkedin: 'https://www.linkedin.com/in/MrAhmadAwais/',
       },
     ],
@@ -105,7 +105,7 @@ export const companies: Company[] = [
     title: 'Paleon',
     label: 'Active',
     href: 'https://www.paleon.io',
-    logo: '/holdings/avatars/paleon.jpg',
+    logo: '/avatars/paleon.jpg',
     summary: 'Know which TikTok Shop creators will sell before you pay them',
     description: [
       'Paleon analyzes over 7,000 TikTok Shop videos to identify the exact formats, scripts, and hooks that drive sales. The platform helps brands brief creators with data, pay flat fees with confidence, and scale from 10 to 200+ engaged creators in 6 months. With one-click OAuth integration and automatic data syncing, brands can connect their TikTok Shop and start gaining insights immediately.',
@@ -117,17 +117,17 @@ export const companies: Company[] = [
     founders: [
       {
         name: 'Jelmer Hilhorst',
-        avatar: '/holdings/avatars/jelmer-hilhorst.jpg',
+        avatar: '/avatars/jelmer-hilhorst.jpg',
         linkedin: 'https://www.linkedin.com/in/jelmerhilhorst/',
       },
       {
         name: 'Sam van Roosmalen',
-        avatar: '/holdings/avatars/sam-van-roosmalen.jpg',
+        avatar: '/avatars/sam-van-roosmalen.jpg',
         linkedin: 'https://www.linkedin.com/in/sam-van-roosmalen-59bb1a241/',
       },
       {
         name: 'Thijmen Kammeijer',
-        avatar: '/holdings/avatars/thijmen-kammeijer.jpg',
+        avatar: '/avatars/thijmen-kammeijer.jpg',
         linkedin: 'https://www.linkedin.com/in/thijmenkammeijer/',
       },
     ],
@@ -136,7 +136,7 @@ export const companies: Company[] = [
     slug: 'pabio',
     title: 'Pabio',
     label: 'Inactive',
-    logo: '/holdings/avatars/pabio.jpg',
+    logo: '/avatars/pabio.jpg',
     summary:
       'Rent-to-own furniture with personalized interior design in Europe.',
     description: [
@@ -151,12 +151,12 @@ export const companies: Company[] = [
     founders: [
       {
         name: 'Carlo Badini',
-        avatar: '/holdings/avatars/carlo-badini.jpg',
+        avatar: '/avatars/carlo-badini.jpg',
         linkedin: 'https://www.linkedin.com/in/carlobadini/',
       },
       {
         name: 'Anand Chowdhary',
-        avatar: '/holdings/avatars/anand-chowdhary.jpg',
+        avatar: '/avatars/anand-chowdhary.jpg',
         linkedin: 'https://www.linkedin.com/in/anandchowdhary/',
       },
     ],
@@ -165,7 +165,7 @@ export const companies: Company[] = [
     slug: 'oswald-labs',
     title: 'Oswald Labs',
     label: 'Inactive',
-    logo: '/holdings/avatars/oswald-labs.jpg',
+    logo: '/avatars/oswald-labs.jpg',
     summary: 'Accessibility technology for the next billion users',
     description: [
       'Oswald Labs is an award-winning accessibility technology company that builds products for people with disabilities, with a mission to build technology for the next billion users by promoting accessibility and equality. The company started after winning the Code4Impact award at AngelHack Delhi 2016 for building the first web reading tool for people with dyslexia. The flagship product Agastya adds disability-friendly features to websites with a single line of JavaScript, including dyslexia-friendly modes, text-to-speech, translation to 100+ languages, high contrast options, and live chat.',
@@ -179,17 +179,17 @@ export const companies: Company[] = [
     founders: [
       {
         name: 'Anand Chowdhary',
-        avatar: '/holdings/avatars/anand-chowdhary.jpg',
+        avatar: '/avatars/anand-chowdhary.jpg',
         linkedin: 'https://www.linkedin.com/in/anandchowdhary/',
       },
       {
         name: 'Nishant Gadihoke',
-        avatar: '/holdings/avatars/nishant-gadihoke.jpg',
+        avatar: '/avatars/nishant-gadihoke.jpg',
         linkedin: 'https://www.linkedin.com/in/nishantgadihoke/',
       },
       {
         name: 'Mahendra Singh Raghuwanshi',
-        avatar: '/holdings/avatars/mahendra-singh-raghuwanshi.png',
+        avatar: '/avatars/mahendra-singh-raghuwanshi.png',
         linkedin:
           'https://www.linkedin.com/in/mahendra-singh-raghuwanshi-88297a7b/',
       },
@@ -199,7 +199,7 @@ export const companies: Company[] = [
     slug: 'ara',
     title: 'Ara',
     label: 'Inactive',
-    logo: '/holdings/avatars/ara.png',
+    logo: '/avatars/ara.png',
     summary: 'AI assistant that handles meeting scheduling over email',
     description: [
       'Ara is an AI-powered assistant designed to handle meeting scheduling through email. By understanding natural language and calendar availability, Ara can autonomously coordinate meetings between multiple parties, saving time and reducing the back-and-forth typically involved in scheduling.',
@@ -213,12 +213,12 @@ export const companies: Company[] = [
     founders: [
       {
         name: 'Florian Overkamp',
-        avatar: '/holdings/avatars/florian-overkamp.jpg',
+        avatar: '/avatars/florian-overkamp.jpg',
         linkedin: 'https://www.linkedin.com/in/florianoverkamp/',
       },
       {
         name: 'Anand Chowdhary',
-        avatar: '/holdings/avatars/anand-chowdhary.jpg',
+        avatar: '/avatars/anand-chowdhary.jpg',
         linkedin: 'https://www.linkedin.com/in/anandchowdhary/',
       },
     ],
