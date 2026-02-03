@@ -1,6 +1,13 @@
 import { CompanyCards } from '@/app/common/CompanyCards'
 import { Container } from '@/app/common/Container'
 import { BackgroundImage } from '@/app/holdings/components/BackgroundImage'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Portfolio – Chowdhary.co',
+  description:
+    'Pre-seed and seed investments in AI, developer tools, and infrastructure companies.',
+}
 
 export default function PortfolioPage() {
   return (

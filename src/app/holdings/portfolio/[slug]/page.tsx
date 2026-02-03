@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: company.title,
+    title: `${company.title} – Portfolio – Chowdhary.co`,
     description: company.summary,
   }
 }
