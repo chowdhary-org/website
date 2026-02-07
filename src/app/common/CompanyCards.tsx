@@ -68,7 +68,7 @@ function CompanyCard({ company }: { company: Company }) {
 
   if (company.stealth) {
     return (
-      <>
+      <div>
         <div className="flex items-center gap-4">
           <StealthLogo />
           <div className="-translate-y-0.5 text-xs text-xs font-semibold">
@@ -102,7 +102,7 @@ function CompanyCard({ company }: { company: Company }) {
             </div>
           )}
         </div>
-      </>
+      </div>
     )
   }
 
