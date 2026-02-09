@@ -80,7 +80,7 @@ function CompanyCard({ company }: { company: Company }) {
             </h3>
           </div>
         </div>
-        <p className="mt-1.5 text-base tracking-tight text-primary-900/80">
+        <p className="mt-3 text-base tracking-tight text-primary-900/80">
           {company.summary}
         </p>
         <div className="mt-4 flex items-center justify-between gap-4">
@@ -130,7 +130,7 @@ function CompanyCard({ company }: { company: Company }) {
         </h3>
       </div>
       <p
-        className="mt-1.5 text-base tracking-tight text-primary-900/80"
+        className="mt-3 text-base tracking-tight text-primary-900/80"
         itemProp="description"
       >
         {company.summary}
