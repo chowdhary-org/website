@@ -13,7 +13,12 @@
     ],
     "founded": "2025",
     "location": "San Francisco, CA",
-    "tags": ["AI", "Developer Tools", "Open Source", "Y Combinator X25"],
+    "tags": [
+      "AI",
+      "Developer Tools",
+      "Open Source",
+      "Y Combinator X25"
+    ],
     "founders": [
       {
         "name": "Lennert Jansen",
@@ -35,7 +40,11 @@
     "stealthCategory": "LLM observability company",
     "summary": "Full-stack monitoring and debugging platform for AI applications",
     "description": "",
-    "tags": ["AI", "Developer Tools", "Y Combinator"]
+    "tags": [
+      "AI",
+      "Developer Tools",
+      "Y Combinator"
+    ]
   },
   {
     "slug": "firstquadrant",
@@ -46,13 +55,18 @@
     "summary": "AI sales platform for B2B teams with human-in-the-loop",
     "description": [
       "FirstQuadrant is an AI sales execution platform that helps founders and revenue teams move faster, stay organized, and close more deals by streamlining behind-the-scenes sales work. The platform encompasses a complete suite of AI tools organized around three pillars: Grow for top-of-funnel expansion through personalized email campaigns, Convert for pipeline management and deal optimization, and Nurture for relationship management and reactivation of inactive prospects.",
-      "The platform features advanced AI reasoning to keep deals moving—understanding context, thinking ahead, and supporting reps with the right next steps. Key capabilities include AI Conversations, AI Actions, AI Enrichment, and AI Campaigns, enabling teams to convert more deals, nurture inactive relationships, and grow their pipeline. In June 2024, FirstQuadrant acquired Flike, another AI-powered sales tool, to expand its capabilities.",
+      "The platform features advanced AI reasoning to keep deals moving\u2014understanding context, thinking ahead, and supporting reps with the right next steps. Key capabilities include AI Conversations, AI Actions, AI Enrichment, and AI Campaigns, enabling teams to convert more deals, nurture inactive relationships, and grow their pipeline. In June 2024, FirstQuadrant acquired Flike, another AI-powered sales tool, to expand its capabilities.",
       "Backed by Y Combinator (S21) and recognized as #1 Product of the Day on Product Hunt, FirstQuadrant was used by the fastest-growing YC startups. In 2025, the company completed a confidential agreement with a leading AI technology company that recognized long-term strategic value in components of the FirstQuadrant platform and data infrastructure."
     ],
     "founded": "2021",
     "ended": "2025",
     "location": "San Francisco, CA",
-    "tags": ["AI", "Sales", "B2B", "Y Combinator S21"],
+    "tags": [
+      "AI",
+      "Sales",
+      "B2B",
+      "Y Combinator S21"
+    ],
     "founders": [
       {
         "name": "Carlo Badini",
@@ -76,20 +90,25 @@
     "description": ""
   },
   {
-    "slug": "langbase",
-    "title": "Langbase",
+    "slug": "commandcode",
+    "title": "CommandCode",
     "label": "Active",
-    "href": "https://langbase.com",
-    "logo": "/avatars/langbase.jpg",
-    "summary": "The most powerful serverless platform for building AI agents",
+    "href": "https://commandcode.ai",
+    "logo": "/avatars/commandcode.jpg",
+    "summary": "AI-powered coding agent that learns your taste and builds software your way",
     "description": [
-      "Langbase is building the best AI engineering developer experience for developers. The platform has helped over 100,000 developers from more than 5,000 companies build reliable and infinitely scalable composable AI agents—from prototypes to production without managing a single container.",
-      "The serverless platform processes 700+ TB of vector memory and billions of AI agent runs every month. Langbase provides powerful AI primitives including Pipe Agents for building serverless AI agents with tools and memory, AI Memory for automatic RAG with long-term memory, Workflows for multi-step durable agents, and Threads for managing conversation history. With push-to-deploy workflows and architecture designed for real scale, Langbase lets teams ship AI products faster. The platform also launched Command.new, enabling developers to turn prompts into production-ready agents.",
-      "Langbase is backed by incredible investors including Tom Preston-Werner (GitHub co-founder), Luca Maestri (Apple CFO), Amjad Masad (Replit CEO), and leaders from Google, Cloudflare, Snyk, Supabase, and Vercel."
+      "CommandCode (formerly Langbase) is an AI coding agent that learns your preferences\u2014languages, frameworks, patterns, and workflows\u2014and uses that understanding to build software exactly the way you like it. From CLIs to API routes, it generates production-ready code tailored to your taste.",
+      "Previously as Langbase, the platform helped over 100,000 developers from more than 5,000 companies build AI agents on a serverless platform processing 700+ TB of vector memory and billions of agent runs monthly. The pivot to CommandCode represents a focused bet on AI-native software development.",
+      "CommandCode is backed by incredible investors including Tom Preston-Werner (GitHub co-founder), Luca Maestri (Apple CFO), Amjad Masad (Replit CEO), and leaders from Google, Cloudflare, Snyk, Supabase, and Vercel."
     ],
     "founded": "2023",
     "location": "San Francisco, CA",
-    "tags": ["AI", "Developer Tools", "Platform", "Serverless"],
+    "tags": [
+      "AI",
+      "Developer Tools",
+      "Platform",
+      "Serverless"
+    ],
     "founders": [
       {
         "name": "Ahmad Awais",
@@ -108,10 +127,15 @@
     "description": [
       "Paleon analyzes over 7,000 TikTok Shop videos to identify the exact formats, scripts, and hooks that drive sales. The platform helps brands brief creators with data, pay flat fees with confidence, and scale from 10 to 200+ engaged creators in 6 months. With one-click OAuth integration and automatic data syncing, brands can connect their TikTok Shop and start gaining insights immediately.",
       "The AI-powered platform automatically transcribes videos, analyzes tones, extracts comments, and identifies winning patterns to create a unique brand map. This transforms creator partnerships from expensive gambles into predictable revenue engines, allowing brands to identify which creators are likely to perform before paying them.",
-      "By providing data-driven insights, Paleon breaks the traditional creator churn cycle where unpredictable performance makes brands hesitant to pay upfront fees. Brands can confidently pay per-post incentives, creators stay engaged and post consistently earning both posting incentives and TikTok Shop commissions, and top performers become mentors who recruit and train new creators—creating a self-perpetuating growth engine."
+      "By providing data-driven insights, Paleon breaks the traditional creator churn cycle where unpredictable performance makes brands hesitant to pay upfront fees. Brands can confidently pay per-post incentives, creators stay engaged and post consistently earning both posting incentives and TikTok Shop commissions, and top performers become mentors who recruit and train new creators\u2014creating a self-perpetuating growth engine."
     ],
     "founded": "2023",
-    "tags": ["AI", "E-commerce", "TikTok Shop", "Creator Economy"],
+    "tags": [
+      "AI",
+      "E-commerce",
+      "TikTok Shop",
+      "Creator Economy"
+    ],
     "founders": [
       {
         "name": "Jelmer Hilhorst",
@@ -138,13 +162,18 @@
     "summary": "Rent-to-own furniture with personalized interior design in Europe",
     "description": [
       "Pabio is a rent-to-own furniture startup that combines personalized interior design with flexible furniture subscriptions, with a mission to democratize beautiful living. Customers upload their apartment floor plan and photos, and professional interior designers create personalized proposals with photorealistic 3D renders showing how their fully furnished apartment will look. With no upfront costs, customers could rent furniture valued at approximately $20,000 with delivery and installation within 3 weeks.",
-      "Furniture is delivered, assembled, and fully insured for a monthly subscription fee—typically under €200 for a one-bedroom apartment. Monthly payments go toward ownership, allowing customers to buy individual pieces or continue renting indefinitely. The sustainable model retrieves furniture when customers move out, refurbishes it, and places it in new apartments at discounted prices.",
+      "Furniture is delivered, assembled, and fully insured for a monthly subscription fee\u2014typically under \u20ac200 for a one-bedroom apartment. Monthly payments go toward ownership, allowing customers to buy individual pieces or continue renting indefinitely. The sustainable model retrieves furniture when customers move out, refurbishes it, and places it in new apartments at discounted prices.",
       "Backed by Y Combinator (S21) and investors including Swiss Startup Group, Serpentine Ventures, Session.VC, Tomahawk.VC, and Pioneer Fund, Pabio raised $2.2 million in seed funding. As one of the first companies founded in Switzerland to receive Y Combinator investment, Pabio started in Switzerland and expanded to Berlin, Germany in December 2021."
     ],
     "founded": "2020",
     "ended": "2022",
     "location": "Zurich, Switzerland",
-    "tags": ["Furniture", "Interior Design", "Rent-to-Own", "Y Combinator S21"],
+    "tags": [
+      "Furniture",
+      "Interior Design",
+      "Rent-to-Own",
+      "Y Combinator S21"
+    ],
     "founders": [
       {
         "name": "Carlo Badini",
@@ -172,7 +201,11 @@
     "founded": "2016",
     "ended": "2020",
     "location": "New Delhi, India",
-    "tags": ["Accessibility", "Technology", "Web"],
+    "tags": [
+      "Accessibility",
+      "Technology",
+      "Web"
+    ],
     "founders": [
       {
         "name": "Anand Chowdhary",
@@ -200,12 +233,17 @@
     "description": [
       "Ara is an AI-powered assistant designed to handle meeting scheduling through email. By understanding natural language and calendar availability, Ara can autonomously coordinate meetings between multiple parties, saving time and reducing the back-and-forth typically involved in scheduling.",
       "Ara was built in collaboration with Speakup, a Dutch cloud telephony and VoIP provider founded in 2003 by Florian Overkamp. The project combines Speakup's expertise in communication infrastructure with AI-powered natural language processing to create a seamless scheduling experience. It was developed under O15Y, a venture studio founded in 2019 that builds and incubates technology companies centered around communication.",
-      "The assistant integrates with email and calendar systems to understand availability, propose meeting times, and confirm appointments—all through natural conversation. Built on the Staart framework, a Node.js backend starter for SaaS applications written in TypeScript, Ara handles the tedious coordination work so teams can focus on what matters."
+      "The assistant integrates with email and calendar systems to understand availability, propose meeting times, and confirm appointments\u2014all through natural conversation. Built on the Staart framework, a Node.js backend starter for SaaS applications written in TypeScript, Ara handles the tedious coordination work so teams can focus on what matters."
     ],
     "founded": "2019",
     "ended": "2020",
     "location": "Netherlands",
-    "tags": ["AI", "Productivity", "Scheduling", "Telecommunications"],
+    "tags": [
+      "AI",
+      "Productivity",
+      "Scheduling",
+      "Telecommunications"
+    ],
     "founders": [
       {
         "name": "Florian Overkamp",
