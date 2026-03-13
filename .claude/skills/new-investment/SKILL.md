@@ -1,7 +1,7 @@
 ---
 name: new-investment
 description: Add a new portfolio company to the holdings JSON after researching the startup
-user_invocable: true
+user-invocable: true
 ---
 
 # New Investment Skill
