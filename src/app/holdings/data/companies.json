@@ -33,17 +33,41 @@
     ]
   },
   {
-    "slug": "stealth-llm-observability",
-    "title": "LLM observability company",
-    "label": "Stealth",
-    "stealth": true,
-    "stealthCategory": "LLM observability company",
-    "summary": "Full-stack monitoring and debugging platform for AI applications",
-    "description": "",
+    "slug": "respan",
+    "title": "Respan",
+    "label": "Active",
+    "href": "https://www.respan.ai",
+    "logo": "/avatars/respan.png",
+    "summary": "Self-driving observability, evals, and gateway for AI agents",
+    "description": [
+      "Respan (formerly Keywords AI) is an LLM engineering platform that provides self-driving observability, evaluations, and a unified gateway for AI agents. The platform enables AI teams to trace agent behavior with end-to-end execution paths, evaluate using human review, code checks, and LLM judges, and optimize prompts with version tracking for models, tools, and workflows.",
+      "The platform routes across 500+ LLM models through a single AI Gateway with real-time dashboards tracking quality, latency, cost, and custom metrics. Processing over 1 billion logs and 2 trillion tokens per month, Respan serves 100+ customers and 6.5 million+ end users. The platform is ISO 27001 certified, SOC 2 compliant, GDPR compliant, and HIPAA compliant with BAA available.",
+      "Backed by Y Combinator (W24), Respan achieved profitability on its initial YC funding alone. The company rebranded from Keywords AI to Respan in early 2026, with the name inspired by 'spans' — the atomic units in AI tracing and debugging. The team operates lean from Alameda, California with SDKs for Python and TypeScript."
+    ],
+    "founded": "2023",
+    "location": "San Francisco, CA",
     "tags": [
       "AI",
       "Developer Tools",
-      "Y Combinator"
+      "Observability",
+      "Y Combinator W24"
+    ],
+    "founders": [
+      {
+        "name": "Andy Li",
+        "avatar": "/avatars/andy-li.png",
+        "linkedin": "https://www.linkedin.com/in/hanheli/"
+      },
+      {
+        "name": "Raymond Huang",
+        "avatar": "/avatars/raymond-huang.png",
+        "linkedin": "https://www.linkedin.com/in/yunrui-huang/"
+      },
+      {
+        "name": "Hendrix Liu",
+        "avatar": "/avatars/hendrix-liu.png",
+        "linkedin": "https://www.linkedin.com/in/hendrix-liu-7a015822b/"
+      }
     ]
   },
   {
