@@ -1,5 +1,15 @@
 [
   {
+    "slug": "stealth-ai-context-engineering",
+    "title": "AI context engineering company",
+    "label": "Stealth",
+    "stealth": true,
+    "stealthCategory": "AI context engineering company",
+    "summary": "Context engineering platform for AI-assisted software development",
+    "description": "",
+    "tags": ["AI", "Developer Tools", "Y Combinator P26"]
+  },
+  {
     "slug": "airweave",
     "title": "Airweave",
     "label": "Active",
