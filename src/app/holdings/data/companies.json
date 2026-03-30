@@ -81,6 +81,29 @@
     ]
   },
   {
+    "slug": "sycamore",
+    "title": "Sycamore",
+    "label": "Active",
+    "href": "https://sycamore.so",
+    "logo": "/avatars/sycamore.png",
+    "summary": "Operating system for autonomous enterprise AI",
+    "description": [
+      "Sycamore is building an operating system for autonomous enterprise AI that enables organizations to deploy and operate AI agents with security, governance, and human oversight. The platform provides progressive autonomy, allowing enterprises to start with human-in-the-loop workflows and gradually increase agent independence as trust is established.",
+      "Key capabilities include adaptive system generation from natural language, continuous improvement and learning, and multi-agent coordination. Sycamore's platform is designed for Fortune 500 companies looking to safely integrate AI agents into their core business operations.",
+      "Founded by Sri Viswanath, former CTO of Atlassian, Sycamore raised a $65 million seed round led by Coatue and Lightspeed Venture Partners, with participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund. Notable angel investors include Bob McGrew (former Chief Scientist at OpenAI), Lip-Bu Tan (CEO of Intel), Ali Ghodsi (CEO of Databricks), and Frederic Kerrest (co-founder of Okta)."
+    ],
+    "founded": "2026",
+    "location": "Palo Alto, CA",
+    "tags": ["AI", "Enterprise", "Agents"],
+    "founders": [
+      {
+        "name": "Sri Viswanath",
+        "avatar": "/avatars/sri-viswanath.png",
+        "linkedin": "https://www.linkedin.com/in/sriviswanath/"
+      }
+    ]
+  },
+  {
     "slug": "firstquadrant",
     "title": "FirstQuadrant",
     "label": "Exited",
@@ -113,15 +136,6 @@
         "linkedin": "https://www.linkedin.com/in/anandchowdhary/"
       }
     ]
-  },
-  {
-    "slug": "stealth-enterprise-intelligence",
-    "title": "Enterprise intelligence company",
-    "label": "Stealth",
-    "stealth": true,
-    "stealthCategory": "Enterprise intelligence company",
-    "summary": "Agentic AI platform for processing and understanding unstructured data",
-    "description": ""
   },
   {
     "slug": "commandcode",
